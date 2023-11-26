@@ -1,7 +1,19 @@
 "use client";
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
 
-const Home = () => {
-  return <div className="text-red-500">hom</div>;
+const Index = () => {
+  const router = useRouter();
+
+  const isAuthenticated = false;
+
+  useEffect(() => {
+    if (isAuthenticated) {
+      router.push("/dashboard");
+    } else {
+      router.push("/auth/sign-in");
+    }
+  });
 };
 
-export default Home;
+export default Index;
