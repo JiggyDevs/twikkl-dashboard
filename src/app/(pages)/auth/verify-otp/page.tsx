@@ -1,8 +1,11 @@
 "use client";
 
 import Button from "@/app/ui/atoms/Button";
-import OTPComponent from "@/app/ui/atoms/OtpInput";
+
+import OTPComponent from "@/app/ui/molecules/OtpInput";
+
 import Link from "next/link";
+
 import { useRouter } from "next/navigation";
 
 import { useState } from "react";
