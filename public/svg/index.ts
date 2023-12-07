@@ -1,0 +1,10 @@
+export { default as DashboardHomeIcon } from "./DashboardHomeIcon";
+export { default as CalendarTimeIcon } from "./CalendarTimeIcon";
+export { default as GroupsIcon } from "./GroupsIcon";
+export { default as HidePasswordIcon } from "./HidePasswordIcon";
+export { default as LogoutIcon } from "./LogoutIcon";
+export { default as ReportsIcon } from "./ReportsIcon";
+export { default as SettingsIcon } from "./SettingsIcon";
+export { default as UsersIcon } from "./UsersIcon";
+export { default as ViewPasswordIcon } from "./ViewPasswordIcon";
+export { default as WalletsIcon } from "./WalletsIcon";

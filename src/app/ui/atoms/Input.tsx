@@ -4,8 +4,7 @@ import { InputAttributes } from "@/app/lib/types/components";
 import clsx from "clsx";
 import Link from "next/link";
 import { useState } from "react";
-import ViewPasswordIcon from "../../../../public/svg/ViewPasswordIcon";
-import HidePasswordIcon from "../../../../public/svg/HidePasswordIcon";
+import { ViewPasswordIcon, HidePasswordIcon } from "../../../../public/svg";
 
 const Input = ({
   name,

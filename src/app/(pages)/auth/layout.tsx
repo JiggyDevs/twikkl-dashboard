@@ -18,8 +18,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           src="/img/twikkl_logo.webp"
           alt="Twikkl-brand-img"
           className="md:hidden"
-          width={200}
-          height={200}
+          width={150}
+          height={150}
           priority
         />
 

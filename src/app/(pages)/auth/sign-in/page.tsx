@@ -2,8 +2,11 @@
 
 import Button from "@/app/ui/atoms/Button";
 import Input from "@/app/ui/atoms/Input";
+import { useRouter } from "next/navigation";
 
 const SignInPage = () => {
+  const { push } = useRouter();
+
   return (
     <div className="flex flex-col w-full max-w-lg mx-auto">
       <div className="mb-4 space-y-3">
@@ -23,7 +26,7 @@ const SignInPage = () => {
         />
       </div>
 
-      <Button label="Sign In" onClick={() => console.log("Hello")} />
+      <Button label="Sign In" onClick={() => push("/dashboard")} />
     </div>
   );
 };
