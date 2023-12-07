@@ -21,9 +21,9 @@ const NavLink = () => {
             key={link.name}
             href={link.href}
             className={clsx(
-              "grid grid-cols-[0.18fr_0.82fr] items-center py-3 pl-4 rounded-lg font-medium",
+              "grid grid-cols-[0.18fr_0.82fr] items-center py-3 pl-4 rounded-lg",
               isActiveLink
-                ? "text-twikkl-tertiary bg-twikkl-primary"
+                ? "text-twikkl-tertiary bg-twikkl-primary font-medium"
                 : "text-twikkl-inactive"
             )}
           >
