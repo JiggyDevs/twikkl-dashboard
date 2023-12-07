@@ -11,7 +11,7 @@ const Button = ({
   return (
     <button
       className={clsx(
-        "h-[2.75rem] p-3 flex flex-1 justify-center items-center font-medium text-twikkl-tertiary rounded-md transition-all duration-300 w-full",
+        "p-3 flex flex-1 justify-center items-center font-medium text-twikkl-tertiary rounded-md transition-all duration-300 w-full",
         maxWidth,
         disable ? "bg-twikkl-inactive" : "bg-twikkl-primary"
       )}
