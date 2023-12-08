@@ -8,3 +8,6 @@ export { default as SettingsIcon } from "./SettingsIcon";
 export { default as UsersIcon } from "./UsersIcon";
 export { default as ViewPasswordIcon } from "./ViewPasswordIcon";
 export { default as WalletsIcon } from "./WalletsIcon";
+export { default as SearchIcon } from "./SearchIcon";
+export { default as NotificationIcon } from "./NoficationIcon";
+export { default as ToggleLightModeIcon } from "./ToggleLightMode";
