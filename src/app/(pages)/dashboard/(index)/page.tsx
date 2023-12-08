@@ -1,13 +1,9 @@
-import Card from "@/app/ui/dashboard/Card";
-import React from "react";
+import CardWrapper from "@/app/ui/dashboard/CardWrapper";
 
 const Page = () => {
   return (
-    <div className="flex gap-x-6">
-      <Card />
-      <Card />
-      <Card />
-      <Card />
+    <div className="flex flex-col">
+      <CardWrapper />
     </div>
   );
 };
