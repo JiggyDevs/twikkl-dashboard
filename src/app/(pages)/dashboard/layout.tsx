@@ -4,12 +4,12 @@ import React from "react";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="h-auto flex-grow grid grid-cols-[0.18fr_0.82fr] overflow-hidden">
+    <div className="flex">
       <SideBar />
-      <div className="bg-[#D7EBD9] flex flex-col overflow-hidden">
+      {/* <div className="bg-[#D7EBD9] flex-grow h-auto flex-col relative">
         <NavBar />
         <div className="flex-1 px-6 py-4 overflow-y-auto">{children}</div>
-      </div>
+      </div> */}
     </div>
   );
 };

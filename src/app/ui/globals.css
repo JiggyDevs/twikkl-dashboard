@@ -1,6 +1,4 @@
 @tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 * {
   scrollbar-width: thin;
@@ -24,6 +22,9 @@
   border-radius: 1rem;
 }
 
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --primary-color: #50a040;
   --secondary-color: #2ecc71;
@@ -45,18 +46,18 @@
   }
 }
 
-/* body {
+body {
+  overflow-x: hidden;
   width: 100vw;
   height: 100vh;
-  display: flex;
+}
 
-  overflow-x: hidden;
-} */
-
-/* body {
+body {
+  /* Hide the scrollbar thumb */
   scrollbar-width: none;
   -ms-overflow-style: none;
 
+  /* For Firefox */
   scrollbar-color: transparent transparent;
 }
 
@@ -67,7 +68,7 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-track {
   background: transparent;
-} */
+}
 
 input:focus,
 button:focus {
@@ -85,11 +86,13 @@ button:focus {
 }
 
 @layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
   .no-scrollbar::-webkit-scrollbar {
     display: none;
   }
+  /* Hide scrollbar for IE, Edge and Firefox */
   .no-scrollbar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
 }
