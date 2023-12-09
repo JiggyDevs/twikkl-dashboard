@@ -12,7 +12,7 @@ const ActiveUsersCard = () => {
           <ReloadIcon />
         </div>
       </div>
-      <div className="">
+      <div className="mt-6 md:mt-0">
         <h1 className="text-[6.75rem] font-bold leading-none">85%</h1>
         <span className="text-twikkl-primary text-xs">online</span>
       </div>
