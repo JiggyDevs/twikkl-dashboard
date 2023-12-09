@@ -1,5 +1,5 @@
 import Card from "./Card";
-import data from "../../lib/data/index.json";
+import data from "../../../lib/data/index.json";
 
 const CardWrapper = () => {
   return (
