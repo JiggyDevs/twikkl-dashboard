@@ -35,7 +35,7 @@ const Input = ({
 
       <div
         className={clsx(
-          "flex flex-1 bg-white pl-3 pr-4 py-3 rounded-sm items-center gap-x-1 transition-all duration-200 border",
+          "flex flex-1 bg-white pl-3 pr-4 py-3 rounded-2xl items-center gap-x-1 transition-all duration-200 border",
           isFocused ? "border-twikkl-primary" : "border-twikkl-inactive"
         )}
       >
