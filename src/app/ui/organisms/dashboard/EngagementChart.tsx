@@ -90,7 +90,13 @@ const EngagementChart = () => {
     <div className="w-full bg-twikkl-tertiary rounded-3xl pt-8 px-2 md:px-6">
       <div className="flex justify-between">
         <h2 className="font-medium">Engagement chart</h2>
-        <Select />
+        <Select
+          placeHolder="Month"
+          options={[
+            { label: "life", value: "value" },
+            { label: "Married", value: "value" },
+          ]}
+        />
       </div>
       <Chart
         options={chart.options}

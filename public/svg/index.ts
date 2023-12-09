@@ -13,3 +13,4 @@ export { default as NotificationIcon } from "./NoficationIcon";
 export { default as ToggleLightModeIcon } from "./ToggleLightMode";
 export { default as TrendsUpIcon } from "./TrendsUp";
 export { default as TrendsDownIcon } from "./TrendsDown";
+export {default as CaretIcon} from "./CarretIcon"

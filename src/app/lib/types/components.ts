@@ -16,3 +16,19 @@ export interface InputAttributes extends HTMLAttributes<HTMLInputElement> {
     to?: string;
   };
 }
+
+export interface SelectValueType {
+  label: string;
+  value: any;
+}
+
+export interface SelectValueAttributes {
+  initialValue?: SelectValueType;
+  onValueUpdate?: (value: any) => void;
+  options: SelectValueType[];
+  placeholder?: string;
+  disabled?: boolean;
+  label?: string;
+  id?: string;
+  required?: boolean;
+}
