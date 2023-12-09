@@ -23,3 +23,28 @@ export const cardsColorMap = {
   group: "bg-[#A05740]",
   wallet: "bg-[#404AA0]",
 };
+
+export const selectMonths = [
+  { label: "January", value: 1 },
+  { label: "Febuary", value: 2 },
+  { label: "March", value: 3 },
+  { label: "April", value: 4 },
+  { label: "May", value: 5 },
+  { label: "June", value: 6 },
+  { label: "July", value: 7 },
+];
+
+export const chartData = [
+  { key: "Jan", value: 76 },
+  { key: "Feb", value: 56 },
+  { key: "Mar", value: 58 },
+  { key: "Apr", value: 60 },
+  { key: "May", value: 76 },
+  { key: "Jun", value: 25 },
+  { key: "Jul", value: 56 },
+  { key: "Aug", value: 70 },
+  { key: "Sep", value: 76 },
+  { key: "Oct", value: 99 },
+  { key: "Nov", value: 0 },
+  { key: "Dec", value: 0 },
+];

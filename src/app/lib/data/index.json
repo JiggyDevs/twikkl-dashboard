@@ -30,5 +30,87 @@
       "value": "5.8b",
       "percentage": -0.02
     }
+  ],
+  "topEarnersData": [
+    {
+      "image": "/img/profile.webp",
+      "name": "joymark.jgy",
+      "amount": "$ 95,000,000",
+      "position": "1st"
+    },
+    {
+      "image": "/img/profile.webp",
+      "name": "lucyjames.jgy",
+      "amount": "$ 75,000,000",
+      "position": "2nd"
+    },
+    {
+      "image": "/img/profile.webp",
+      "name": "glorypraise.eth",
+      "amount": "$ 43,000,000",
+      "position": "3rd"
+    },
+    {
+      "image": "/img/profile.webp",
+      "name": "praisetom.lens",
+      "amount": "$ 36,000,000",
+      "position": "4th"
+    },
+    {
+      "image": "/img/profile.webp",
+      "name": "jonah.jgy",
+      "amount": "$ 20,000,000",
+      "position": "5th"
+    }
+  ],
+  "votersData": [
+    {
+      "image": "/img/profile.webp",
+      "name": "joyousmark.jgy"
+    },
+    {
+      "image": "/img/profile.webp",
+      "name": "lucyenjames.jgy"
+    },
+    {
+      "image": "/img/profile.webp",
+      "name": "glory-praise.eth"
+    },
+    {
+      "image": "/img/profile.webp",
+      "name": "praisetom.lens"
+    },
+    {
+      "image": "/img/profile.webp",
+      "name": "sallybooks.jgy"
+    },
+    {
+      "image": "/img/profile.webp",
+      "name": "maxwell.jgy"
+    },
+    {
+      "image": "/img/profile.webp",
+      "name": "joy.jgy"
+    },
+    {
+      "image": "/img/profile.webp",
+      "name": "mark.jgy"
+    },
+    {
+      "image": "/img/profile.webp",
+      "name": "mikel.jgy"
+    },
+    {
+      "image": "/img/profile.webp",
+      "name": "joyrichard.jgy"
+    },
+    {
+      "image": "/img/profile.webp",
+      "name": "jerry.jgy"
+    },
+    {
+      "image": "/img/profile.webp",
+      "name": "guena.jgy"
+    }
   ]
 }

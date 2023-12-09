@@ -1,25 +1,13 @@
 "use client";
 
 import dynamic from "next/dynamic";
+
 import Select from "../../atoms/Select";
+import { chartData, selectMonths } from "@/app/lib/data";
 
 const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
 
 const EngagementChart = () => {
-  const chartData = [
-    { key: "Jan", value: 76 },
-    { key: "Feb", value: 56 },
-    { key: "Mar", value: 58 },
-    { key: "Apr", value: 60 },
-    { key: "May", value: 76 },
-    { key: "Jun", value: 25 },
-    { key: "Jul", value: 56 },
-    { key: "Aug", value: 70 },
-    { key: "Sep", value: 76 },
-    { key: "Oct", value: 99 },
-    { key: "Nov", value: 0 },
-    { key: "Dec", value: 0 },
-  ];
   const chart = {
     options: {
       xaxis: {
@@ -90,13 +78,7 @@ const EngagementChart = () => {
     <div className="w-full bg-twikkl-tertiary rounded-3xl pt-8 px-2 md:px-6">
       <div className="flex justify-between">
         <h2 className="font-medium">Engagement chart</h2>
-        <Select
-          placeHolder="Month"
-          options={[
-            { label: "life", value: "value" },
-            { label: "Married", value: "value" },
-          ]}
-        />
+        <Select placeHolder="Month" options={selectMonths} />
       </div>
       <Chart
         options={chart.options}
