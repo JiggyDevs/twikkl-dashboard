@@ -3,7 +3,7 @@ import React from "react";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="h-full md:grid md:grid-cols-[1.3fr_1.2fr]">
+    <div className="h-[90vh] md:h-full md:grid md:grid-cols-[1.3fr_1.2fr]">
       <div className="hidden md:grid bg-twikkl-main place-content-center">
         <Image
           src="/img/twikkl_logo.webp"
