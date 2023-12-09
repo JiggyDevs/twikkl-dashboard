@@ -2,10 +2,10 @@ import { ReloadIcon } from "../../../../../public/svg";
 
 const ActiveUsersCard = () => {
   return (
-    <aside className="bg-twikkl-tertiary rounded-3xl p-8 flex flex-col justify-between w-full">
+    <aside className="bg-twikkl-tertiary rounded-3xl py-8 px-6 flex flex-col justify-between w-full">
       <div className="space-y-4">
         <h2 className="font-medium">Active Users</h2>
-        <div className="flex gap-x-2 items-center">
+        <div className="flex justify-between items-center">
           <span className="flex items-center text-twikkl-main text-sm">
             Recently, about a minute ago
           </span>
