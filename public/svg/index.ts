@@ -11,3 +11,5 @@ export { default as WalletsIcon } from "./WalletsIcon";
 export { default as SearchIcon } from "./SearchIcon";
 export { default as NotificationIcon } from "./NoficationIcon";
 export { default as ToggleLightModeIcon } from "./ToggleLightMode";
+export { default as TrendsUpIcon } from "./TrendsUp";
+export { default as TrendsDownIcon } from "./TrendsDown";

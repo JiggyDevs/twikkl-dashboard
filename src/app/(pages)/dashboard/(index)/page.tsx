@@ -2,8 +2,9 @@ import CardWrapper from "@/app/ui/dashboard/CardWrapper";
 
 const Page = () => {
   return (
-    <div className="flex flex-col">
+    <div className="grid">
       <CardWrapper />
+      <div className=""></div>
     </div>
   );
 };

@@ -1,0 +1,34 @@
+{
+  "cardDatas": [
+    {
+      "label": "Total users",
+      "type": "user",
+      "value": "3.5m",
+      "percentage": 5
+    },
+    {
+      "label": "Total posts",
+      "type": "post",
+      "value": "500m",
+      "percentage": 0.5
+    },
+    {
+      "label": "Total engagements",
+      "type": "engagement",
+      "value": "100m",
+      "percentage": 20
+    },
+    {
+      "label": "Total groups",
+      "type": "group",
+      "value": "500k",
+      "percentage": 25
+    },
+    {
+      "label": "Wallet balance",
+      "type": "wallet",
+      "value": "5.8b",
+      "percentage": -0.02
+    }
+  ]
+}

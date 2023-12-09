@@ -1,6 +1,6 @@
 "use client";
 
-import { navLinks } from "@/app/lib/data/nav-links";
+import { navLinks } from "@/app/lib/data";
 import clsx from "clsx";
 
 import Link from "next/link";

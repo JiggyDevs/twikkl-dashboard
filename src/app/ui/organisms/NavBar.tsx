@@ -10,7 +10,7 @@ const NavBar = () => {
         <span className="font-medium text-twikkl-primary">Joy Mark!</span>
       </p>
       <div className="flex items-center gap-x-7">
-        <div className="flex items-center gap-x-10">
+        <div className="hidden md:flex items-center gap-x-10">
           <SearchBox />
           <div className="w-[1.875rem] h-[1.875rem]">
             <NotificationIcon />
@@ -25,7 +25,7 @@ const NavBar = () => {
             height={40}
             className="rounded-full h-10 w-10"
           />
-          <div className="flex flex-col">
+          <div className="hidden md:flex flex-col">
             <span className="font-medium text-twikkl-main">
               @ubongabasi.jgy
             </span>
@@ -33,7 +33,7 @@ const NavBar = () => {
           </div>
         </div>
 
-        <span className="h-[1.875rem] w-[1.875rem]">
+        <span className="hidden md:block h-[1.875rem] w-[1.875rem]">
           <ToggleLightModeIcon />
         </span>
       </div>
