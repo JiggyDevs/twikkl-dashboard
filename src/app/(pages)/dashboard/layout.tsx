@@ -8,7 +8,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       <SideBar />
       <div className="bg-[#D7EBD9] h-screen flex flex-col overflow-hidden">
         <NavBar />
-        <div className="flex-[0.90] md:flex-1 px-6 py-7 overflow-y-auto">
+        <div className="flex-[0.90] md:flex-1 px-6 pt-5 pb-3 overflow-y-auto">
           {children}
         </div>
       </div>
