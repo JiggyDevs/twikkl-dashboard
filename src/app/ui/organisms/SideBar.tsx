@@ -5,7 +5,7 @@ import { CalendarTimeIcon, LogoutIcon } from "../../../../public/svg";
 
 const SideBar = () => {
   return (
-    <div className="bg-twikkl-main flex-1 flex flex-col pb-4 pt-2">
+    <div className="bg-twikkl-main h-auto flex flex-col pb-4 pt-2">
       <div className="flex flex-col gap-y-4">
         <Link href="/dashboard" className="flex items-center">
           <Image
