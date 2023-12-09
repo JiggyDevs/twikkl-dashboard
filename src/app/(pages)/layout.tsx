@@ -46,7 +46,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="overflow-hidden">
+    <html lang="en">
       <body className={`${axiforma.className}`}>{children}</body>
     </html>
   );
