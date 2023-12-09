@@ -85,7 +85,7 @@ const EngagementChart = () => {
         series={chart.series}
         type="bar"
         height={300}
-        width="100%"
+        width="99%"
       />
     </div>
   );
