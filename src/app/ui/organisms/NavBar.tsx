@@ -1,10 +1,17 @@
 import Image from "next/image";
-import { NotificationIcon, ToggleLightModeIcon } from "../../../../public/svg";
+import {
+  HamburgerIcon,
+  NotificationIcon,
+  ToggleLightModeIcon,
+} from "../../../../public/svg";
 import SearchBox from "../atoms/SearchBox";
 
 const NavBar = () => {
   return (
     <nav className="py-8 px-6 flex items-center justify-between">
+      <span className="w-10 h-10">
+        <HamburgerIcon />
+      </span>
       <p className="flex items-center gap-x-1 text-xl">
         Good Morning
         <span className="font-medium text-twikkl-primary">Joy Mark!</span>

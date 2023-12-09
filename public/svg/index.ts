@@ -16,3 +16,4 @@ export { default as TrendsDownIcon } from "./TrendsDown";
 export { default as CaretIcon } from "./CarretIcon";
 export { default as TwikklVerifiedIcon } from "./VerifiedIcon";
 export { default as ReloadIcon } from "./ReloadIcon";
+export { default as HamburgerIcon } from "./HamburgerIcon";
