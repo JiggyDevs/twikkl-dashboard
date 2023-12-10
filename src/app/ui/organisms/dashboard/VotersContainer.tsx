@@ -5,7 +5,7 @@ import { TwikklVerifiedIcon } from "../../../../../public/svg";
 const VotersContainer = () => {
   const { votersData } = data;
   return (
-    <div className="w-full grid grid-rows-[0.05fr_0.95fr] bg-twikkl-tertiary p-4 md:p-8 rounded-3xl">
+    <div className="w-full grid grid-rows-[0.05fr_0.95fr] bg-twikkl-tertiary p-8 rounded-3xl max-h-[45.5rem]">
       <div className="flex items-center justify-between">
         <h1 className="font-medium">Voters</h1>
         <span className="text-xs text-twikkl-primary">See all</span>

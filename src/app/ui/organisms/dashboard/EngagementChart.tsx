@@ -75,7 +75,7 @@ const EngagementChart = () => {
   };
 
   return (
-    <div className="w-full bg-twikkl-tertiary rounded-3xl pt-8 px-2 md:px-6">
+    <div className="w-full bg-twikkl-tertiary rounded-3xl pt-8 px-6">
       <div className="flex justify-between">
         <h2 className="font-medium">Engagement chart</h2>
         <Select placeHolder="Month" options={selectMonths} />

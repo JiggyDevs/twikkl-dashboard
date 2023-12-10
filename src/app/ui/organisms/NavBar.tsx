@@ -6,11 +6,11 @@ import {
 } from "../../../../public/svg";
 import SearchBox from "../atoms/SearchBox";
 
-const NavBar = () => {
+const NavBar = ({ toggleSideBar }: { toggleSideBar: () => void }) => {
   return (
     <nav className="py-8 px-6 flex items-center justify-between">
-      <span className="w-10 h-10">
-        <HamburgerIcon />
+      <span className="w-10 h-10 md:hidden">
+        <HamburgerIcon onClick={toggleSideBar} />
       </span>
       <p className="flex items-center gap-x-1 text-xl">
         Good Morning
