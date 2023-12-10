@@ -2,6 +2,7 @@
 
 import NavBar from "@/app/ui/organisms/NavBar";
 import SideBar from "@/app/ui/organisms/SideBar";
+import Modal from "@/app/ui/organisms/modals";
 import clsx from "clsx";
 import React, { useCallback, useState } from "react";
 
@@ -35,12 +36,13 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         )}
         onClick={toggleMobileSidebar}
       ></div>
-      <main className="bg-[#D7EBD9] h-screen flex flex-col overflow-hidden">
+      <div className="bg-[#D7EBD9] h-screen flex flex-col overflow-hidden">
         <NavBar toggleSideBar={toggleMobileSidebar} />
         <div className="flex-[0.9] md:flex-1 px-6 pt-2 md:pt-5 pb-3 overflow-y-auto w-full">
           {children}
         </div>
-      </main>
+      </div>
+      <Modal />
     </main>
   );
 };

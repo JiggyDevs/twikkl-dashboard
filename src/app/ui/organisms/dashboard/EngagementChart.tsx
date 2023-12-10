@@ -1,11 +1,8 @@
 "use client";
 
-import dynamic from "next/dynamic";
-
+import Chart from "react-apexcharts";
 import Select from "../../atoms/Select";
 import { chartData, selectMonths } from "@/app/lib/data";
-
-const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
 
 const EngagementChart = () => {
   const chart = {

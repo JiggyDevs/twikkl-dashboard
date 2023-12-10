@@ -30,6 +30,13 @@ const config: Config = {
         "twikkl-inactive": "var(--inactive)",
       },
     },
+    keyframes: {
+      shimmer: {
+        "100%": {
+          transform: "translateX(100%)",
+        },
+      },
+    },
   },
   plugins: [],
 };

@@ -1,23 +1,15 @@
-"use client";
-
 import data from "@/app/lib/data/index.json";
 import Image from "next/image";
-import { TwikklVerifiedIcon } from "../../../../../public/svg";
-import { viewAllVoters } from "@/app/lib/actions/voters-actions";
+import { CloseIcon, TwikklVerifiedIcon } from "../../../../../public/svg";
+import { toggleModalState } from "@/app/lib/entities/modal.entity";
 
-const VotersContainer = () => {
+const VotersModal = () => {
   const { votersData } = data;
-
   return (
-    <div className="w-full grid grid-rows-[0.05fr_0.95fr] bg-twikkl-tertiary p-8 rounded-3xl max-h-[45.5rem]">
+    <div className="w-full grid grid-rows-[0.05fr_0.95fr] bg-twikkl-tertiary p-8 rounded-3xl h-full max-h-[35rem] md:max-w-[35%] mx-auto">
       <div className="flex items-center justify-between">
-        <h1 className="font-medium">Voters</h1>
-        <span
-          className="text-xs text-twikkl-primary cursor-pointer"
-          onClick={viewAllVoters}
-        >
-          See all
-        </span>
+        <h1 className="font-bold text-xl">Voters</h1>
+        <CloseIcon onClick={toggleModalState} />
       </div>
       <div className="mt-5 grid gap-y-5 overflow-y-auto py-2">
         {votersData.map((voter) => (
@@ -47,4 +39,4 @@ const VotersContainer = () => {
   );
 };
 
-export default VotersContainer;
+export default VotersModal;

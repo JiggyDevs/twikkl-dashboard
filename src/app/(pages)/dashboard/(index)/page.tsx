@@ -1,8 +1,15 @@
+import dynamic from "next/dynamic";
+
 import ActiveUsersCard from "@/app/ui/organisms/dashboard/ActiveUsers";
-import CardWrapper from "@/app/ui/organisms/dashboard/CardWrapper";
-import EngagementChart from "@/app/ui/organisms/dashboard/EngagementChart";
 import TopEarnersCard from "@/app/ui/organisms/dashboard/TopEarnersCard";
 import VotersContainer from "@/app/ui/organisms/dashboard/VotersContainer";
+
+import CardWrapper from "@/app/ui/organisms/dashboard/CardWrapper";
+
+const EngagementChart = dynamic(
+  () => import("@/app/ui/organisms/dashboard/EngagementChart"),
+  { ssr: false }
+);
 
 const Page = () => {
   return (
