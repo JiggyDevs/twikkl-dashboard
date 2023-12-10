@@ -5,10 +5,11 @@ import TopEarnersCard from "@/app/ui/organisms/dashboard/TopEarnersCard";
 import VotersContainer from "@/app/ui/organisms/dashboard/VotersContainer";
 
 import CardWrapper from "@/app/ui/organisms/dashboard/CardWrapper";
+import { EngagementChartSkeleton } from "@/app/ui/organisms/skeleton/EngagementChartSkeleton";
 
 const EngagementChart = dynamic(
   () => import("@/app/ui/organisms/dashboard/EngagementChart"),
-  { ssr: false }
+  { ssr: false, loading: () => <EngagementChartSkeleton /> }
 );
 
 const Page = () => {
