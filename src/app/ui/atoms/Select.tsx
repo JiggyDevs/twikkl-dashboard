@@ -32,7 +32,7 @@ const Select = ({
     <div
       className={clsx(
         "flex items-center bg-transparent border border-twikkl-inactive focus:border-twikkl-primary py-2 px-4 rounded-lg text-label relative text-sm w-full",
-        mxWt || "max-w-[7rem]"
+        mxWt || "max-w-[8rem]"
       )}
       onClick={handleToggleList}
     >
@@ -50,7 +50,7 @@ const Select = ({
             : "opacity-0 scale-95 cursor-none pointer-events-none"
         )}
       >
-        {options.map(({ label, value }) => (
+        {options?.map(({ label, value }) => (
           <div
             key={label}
             className={clsx(
