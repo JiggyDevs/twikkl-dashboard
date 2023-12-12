@@ -8,7 +8,7 @@ import SearchBox from "../atoms/SearchBox";
 
 const NavBar = ({ toggleSideBar }: { toggleSideBar: () => void }) => {
   return (
-    <nav className="py-8 px-6 flex items-center justify-between">
+    <nav className="py-8 px-6 flex items-center justify-between w-full">
       <span className="w-10 h-10 md:hidden">
         <HamburgerIcon onClick={toggleSideBar} />
       </span>
@@ -16,12 +16,13 @@ const NavBar = ({ toggleSideBar }: { toggleSideBar: () => void }) => {
         Good Morning
         <span className="font-medium text-twikkl-primary">Joy Mark!</span>
       </p>
-      <div className="flex items-center gap-x-7">
-        <div className="hidden md:flex items-center gap-x-10">
+
+      <div className="flex items-center gap-x-6 md:flex-[0.7]">
+        <div className="hidden md:flex md:items-center gap-x-10 md:flex-grow">
           <SearchBox />
-          <div className="w-[1.875rem] h-[1.875rem]">
+          <span className="w-[1.875rem] h-[1.875rem]">
             <NotificationIcon />
-          </div>
+          </span>
         </div>
 
         <div className="flex gap-x-3 items-center">

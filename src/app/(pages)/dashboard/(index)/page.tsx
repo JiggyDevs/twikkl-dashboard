@@ -1,14 +1,14 @@
 import dynamic from "next/dynamic";
 
-import ActiveUsersCard from "@/app/ui/organisms/dashboard/ActiveUsers";
-import TopEarnersCard from "@/app/ui/organisms/dashboard/TopEarnersCard";
-import VotersContainer from "@/app/ui/organisms/dashboard/VotersContainer";
+import ActiveUsersCard from "@/app/ui/molecules/dashboard/ActiveUsers";
+import TopEarnersCard from "@/app/ui/molecules/dashboard/TopEarnersCard";
+import VotersContainer from "@/app/ui/molecules/dashboard/VotersContainer";
 
-import CardWrapper from "@/app/ui/organisms/dashboard/CardWrapper";
+import CardWrapper from "@/app/ui/molecules/dashboard/CardWrapper";
 import { EngagementChartSkeleton } from "@/app/ui/organisms/skeleton/EngagementChartSkeleton";
 
 const EngagementChart = dynamic(
-  () => import("@/app/ui/organisms/dashboard/EngagementChart"),
+  () => import("@/app/ui/molecules/dashboard/EngagementChart"),
   { ssr: false, loading: () => <EngagementChartSkeleton /> }
 );
 

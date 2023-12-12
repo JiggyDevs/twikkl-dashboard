@@ -1,14 +1,22 @@
+import clsx from "clsx";
 import { SearchIcon } from "../../../../public/svg";
+import { InputAttributes } from "@/app/lib/types/components";
 
-const SearchBox = () => {
+const SearchBox = ({ mxWt = "max-w-[27rem]", ...ref }: InputAttributes) => {
   return (
-    <div className="bg-twikkl-tertiary flex items-center outline-none border-none focus:outline-none px-4 py-2 rounded-3xl gap-x-2">
+    <div
+      className={clsx(
+        "bg-white flex items-center outline-none border-none focus:outline-none px-4 py-3 rounded-lg gap-x-2 w-full",
+        mxWt
+      )}
+    >
+      <SearchIcon />
       <input
         type="text"
-        className="bg-transparent text-[0.9375rem] font-light placeholder:text-twikkl-inactive"
-        placeholder="Search"
+        className="bg-transparent text-sm font-light placeholder:text-twikkl-inactive flex-1"
+        placeholder="Search For anything"
+        {...ref}
       />
-      <SearchIcon />
     </div>
   );
 };

@@ -7,7 +7,7 @@ import clsx from "clsx";
 import CarretIcon from "../../../../public/svg/CarretIcon";
 import { SelectValueType } from "@/app/lib/types/components";
 
-const Select = ({
+const SelectWithSearch = ({
   options,
   mxWt,
   placeHolder,
@@ -34,9 +34,11 @@ const Select = ({
         "flex items-center bg-transparent border border-twikkl-inactive focus:border-twikkl-primary py-3 px-4 rounded-lg text-label relative text-sm w-full",
         mxWt || "max-w-[8rem]"
       )}
-      onClick={handleToggleList}
     >
-      <div className="flex items-center justify-between w-full cursor-pointer">
+      <div
+        className="flex items-center justify-between w-full cursor-pointer"
+        onClick={handleToggleList}
+      >
         <span className="capitalize pointer-events-none">
           {selectedItem?.label || holder}
         </span>
@@ -44,22 +46,31 @@ const Select = ({
       </div>
       <div
         className={clsx(
-          "absolute top-12 w-full left-0 cursor-pointer transition-all duration-150 transform origin-top z-50",
+          "absolute top-12 w-full left-0 cursor-pointer transition-all duration-150 transform origin-top z-50 shadow",
           toggleList
             ? "opacity-100 scale-100"
             : "opacity-0 scale-95 cursor-none pointer-events-none"
         )}
       >
+        <input
+          type="text"
+          className="bg-[#feffff] text-sm placeholder:text-twikkl-inactive flex-1 py-[0.625rem] w-full px-4 rounded-t-md "
+          placeholder="Search"
+        />
+
         {options?.map(({ label, value }) => (
           <div
             key={label}
             className={clsx(
-              "flex items-center justify-between py-3 px-4 first:rounded-t-md  last:border-0 last:rounded-b-md hover:bg-twikkl-primary hover:text-white shadow cursor-pointer",
+              "flex items-center justify-between px-4 py-3 first:rounded-t-md  last:border-0 last:rounded-b-md hover:bg-twikkl-primary hover:text-white cursor-pointer",
               label === selectedItem?.label
                 ? "bg-green-300"
                 : "bg-twikkl-tertiary"
             )}
-            onClick={() => handleOptionSelect({ label, value })}
+            onClick={() => {
+              handleOptionSelect({ label, value });
+              handleToggleList();
+            }}
           >
             <span className="capitalize">{label}</span>
           </div>
@@ -69,4 +80,4 @@ const Select = ({
   );
 };
 
-export default Select;
+export default SelectWithSearch;
