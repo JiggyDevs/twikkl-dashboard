@@ -11,10 +11,12 @@ const Select = ({
   options,
   mxWt,
   placeHolder,
+  extraStyle,
 }: {
   options: SelectValueType[];
   mxWt?: string;
   placeHolder?: string;
+  extraStyle?: string;
 }) => {
   const [selectedItem, setSelectedItem] = useState<SelectValueType | null>(
     null
@@ -32,12 +34,13 @@ const Select = ({
     <div
       className={clsx(
         "flex items-center bg-transparent border border-twikkl-inactive focus:border-twikkl-primary py-3 px-4 rounded-lg text-label relative text-sm w-full",
-        mxWt || "max-w-[8rem]"
+        mxWt || "max-w-[8rem]",
+        extraStyle
       )}
       onClick={handleToggleList}
     >
-      <div className="flex items-center justify-between w-full cursor-pointer">
-        <span className="capitalize pointer-events-none">
+      <div className="flex items-center justify-between gap-x-2 w-full cursor-pointer">
+        <span className="capitalize pointer-events-none truncate text-ellipsis">
           {selectedItem?.label || holder}
         </span>
         <CarretIcon otherstyle={toggleList ? "transform rotate-180" : ""} />
@@ -54,9 +57,9 @@ const Select = ({
           <div
             key={label}
             className={clsx(
-              "flex items-center justify-between py-3 px-4 first:rounded-t-md  last:border-0 last:rounded-b-md hover:bg-twikkl-primary hover:text-white shadow cursor-pointer",
+              "flex items-center justify-between py-3 px-4 first:rounded-t-md  last:border-0 last:rounded-b-md hover:bg-[#c1e0bd] shadow cursor-pointer",
               label === selectedItem?.label
-                ? "bg-green-300"
+                ? "bg-twikkl-primary text-white"
                 : "bg-twikkl-tertiary"
             )}
             onClick={() => handleOptionSelect({ label, value })}

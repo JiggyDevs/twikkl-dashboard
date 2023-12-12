@@ -48,3 +48,13 @@ export const chartData = [
   { key: "Nov", value: 0 },
   { key: "Dec", value: 0 },
 ];
+
+export const userSelectFilter = [
+  { label: "0 - 1,000", value: "0 - 1,000" },
+  { label: "1,000 - 5,000", value: "1,000 - 5,000" },
+  { label: "5,000 - 10,000", value: "5,000-10,000" },
+  { label: "10,000 - 100K", value: "10,000 - 100K" },
+  { label: "100K - 1M", value: "100K - 1M" },
+  { label: "1M - 10M", value: "1M - 10M" },
+  { label: "10M above", value: "10M above" },
+];

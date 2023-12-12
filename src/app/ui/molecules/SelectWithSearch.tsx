@@ -36,10 +36,10 @@ const SelectWithSearch = ({
       )}
     >
       <div
-        className="flex items-center justify-between w-full cursor-pointer"
+        className="flex items-center justify-between w-full cursor-pointer gap-x-2"
         onClick={handleToggleList}
       >
-        <span className="capitalize pointer-events-none">
+        <span className="capitalize pointer-events-none truncate">
           {selectedItem?.label || holder}
         </span>
         <CarretIcon otherstyle={toggleList ? "transform rotate-180" : ""} />

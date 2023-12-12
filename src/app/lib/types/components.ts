@@ -12,6 +12,7 @@ export interface InputAttributes extends HTMLAttributes<HTMLInputElement> {
   type?: string;
   suffix?: ReactNode;
   mxWt?: string;
+  border?: string;
   extraInfo?: {
     label: string;
     to?: string;

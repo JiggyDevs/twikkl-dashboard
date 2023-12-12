@@ -1,4 +1,4 @@
-import UsersTableFilter from "@/app/ui/molecules/users/UsersTableFilter";
+import UsersTableFilter from "@/app/ui/molecules/UsersTableFilter";
 
 const UsersPage = () => {
   return (
