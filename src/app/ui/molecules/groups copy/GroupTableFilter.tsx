@@ -1,23 +1,16 @@
-"use client";
-
-import { useState } from "react";
-import SearchBox from "../atoms/SearchBox";
-import Select from "../atoms/Select";
-import CountryDropdown from "./CountryDropdown";
+import SearchBox from "../../atoms/SearchBox";
+import Select from "../../atoms/Select";
+import SelectWithSearch from "../CountryDropdown";
+import { userSelectFilter } from "@/app/lib/data";
 import platformConstants from "@/app/lib/utils/platformConstants";
 
 const GroupTableFilter = () => {
-  const [selectedEmoji, setSelectedEmoji] = useState("🇳🇬");
-
-  const handleEmojiSelect = (emoji: string) => {
-    setSelectedEmoji(emoji);
-  };
-
   return (
     <div className="grid gap-y-4 md:gap-y-0 md:grid-cols-[0.6fr_0.4fr] gap-x-2 w-full">
       <div className="flex gap-x-4 items-center">
-        <CountryDropdown
-          onEmojiSelect={handleEmojiSelect}
+        <SelectWithSearch
+          placeHolder="Select Country"
+          options={[{ label: "Followers", value: "10k" }]}
           mxWt="max-w-[10rem]"
         />
         <span className="text-2xl">🇳🇬</span>

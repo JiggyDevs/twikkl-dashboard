@@ -1,32 +1,48 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo, ChangeEvent } from "react";
 
 import clsx from "clsx";
 
 import CarretIcon from "../../../../public/svg/CarretIcon";
 import { SelectValueType } from "@/app/lib/types/components";
 
-const SelectWithSearch = ({
-  options,
+import countryData from "@/app/lib/data/country-data.json";
+
+const CountryDropdown = ({
   mxWt,
-  placeHolder,
+  onEmojiSelect,
 }: {
-  options: SelectValueType[];
   mxWt?: string;
-  placeHolder?: string;
+  onEmojiSelect: (emoji: string) => void;
 }) => {
   const [selectedItem, setSelectedItem] = useState<SelectValueType | null>(
     null
   );
 
-  const holder = placeHolder;
+  const [searchQuery, setSearchQuery] = useState("");
+
+  const countryList = useMemo(() => {
+    return countryData
+      ?.map((country) => ({
+        label: country.name,
+        value: country.code,
+        emoji: country.emoji,
+      }))
+      .filter((country) =>
+        country.label.toLowerCase().includes(searchQuery.toLowerCase())
+      );
+  }, [searchQuery]);
 
   const [toggleList, setToggleList] = useState<boolean>(false);
 
   const handleOptionSelect = (val: SelectValueType) => setSelectedItem(val);
 
   const handleToggleList = () => setToggleList((prev) => !prev);
+
+  const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setSearchQuery(e.target.value);
+  };
 
   return (
     <div
@@ -40,13 +56,13 @@ const SelectWithSearch = ({
         onClick={handleToggleList}
       >
         <span className="capitalize pointer-events-none truncate">
-          {selectedItem?.label || holder}
+          {selectedItem?.label || "Select Country"}
         </span>
         <CarretIcon otherstyle={toggleList ? "transform rotate-180" : ""} />
       </div>
       <div
         className={clsx(
-          "absolute top-12 w-full left-0 cursor-pointer transition-all duration-150 transform origin-top z-50 shadow",
+          "absolute top-12 w-full left-0 cursor-pointer transition-all duration-150 transform origin-top z-50 shadow max-h-[34.5rem] overflow-y-auto",
           toggleList
             ? "opacity-100 scale-100"
             : "opacity-0 scale-95 cursor-none pointer-events-none"
@@ -56,13 +72,15 @@ const SelectWithSearch = ({
           type="text"
           className="bg-[#feffff] text-sm placeholder:text-twikkl-inactive flex-1 py-[0.625rem] w-full px-4 rounded-t-md "
           placeholder="Search"
+          value={searchQuery}
+          onChange={handleInputChange}
         />
 
-        {options?.map(({ label, value }) => (
+        {countryList?.map(({ label, value, emoji }) => (
           <div
             key={label}
             className={clsx(
-              "flex items-center justify-between px-4 py-3 first:rounded-t-md  last:border-0 last:rounded-b-md hover:bg-twikkl-primary hover:text-white cursor-pointer",
+              "flex items-center justify-between px-4 py-3 first:rounded-t-md  last:border-0 last:rounded-b-md hover:bg-twikkl-primary hover:text-white cursor-pointer gap-x-2",
               label === selectedItem?.label
                 ? "bg-green-300"
                 : "bg-twikkl-tertiary"
@@ -70,9 +88,10 @@ const SelectWithSearch = ({
             onClick={() => {
               handleOptionSelect({ label, value });
               handleToggleList();
+              onEmojiSelect(emoji || "");
             }}
           >
-            <span className="capitalize">{label}</span>
+            <span className="capitalize">{label}</span> {emoji}
           </div>
         ))}
       </div>
@@ -80,4 +99,4 @@ const SelectWithSearch = ({
   );
 };
 
-export default SelectWithSearch;
+export default CountryDropdown;

@@ -58,3 +58,9 @@ export const userSelectFilter = [
   { label: "1M - 10M", value: "1M - 10M" },
   { label: "10M above", value: "10M above" },
 ];
+
+export const durationType = [
+  { label: "Today", value: "today" },
+  { label: "This Week", value: "this_week" },
+  { label: "This Month", value: "this_month" },
+];

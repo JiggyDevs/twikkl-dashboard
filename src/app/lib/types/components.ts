@@ -22,6 +22,7 @@ export interface InputAttributes extends HTMLAttributes<HTMLInputElement> {
 export interface SelectValueType {
   label: string;
   value: any;
+  emoji?: string;
 }
 
 export interface SelectValueAttributes {

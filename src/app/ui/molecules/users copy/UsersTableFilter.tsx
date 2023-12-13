@@ -1,27 +1,19 @@
-"use client";
-
-import { useState } from "react";
-import SearchBox from "../atoms/SearchBox";
-import Select from "../atoms/Select";
-import CountryDropdown from "./CountryDropdown";
+import SearchBox from "../../atoms/SearchBox";
+import Select from "../../atoms/Select";
+import SelectWithSearch from "../CountryDropdown";
 import { userSelectFilter } from "@/app/lib/data";
 import platformConstants from "@/app/lib/utils/platformConstants";
 
 const UsersTableFilter = () => {
-  const [selectedEmoji, setSelectedEmoji] = useState("🇳🇬");
-
-  const handleEmojiSelect = (emoji: string) => {
-    setSelectedEmoji(emoji);
-  };
-
   return (
     <div className="grid gap-y-4 md:gap-y-0 md:grid-cols-[0.25fr_0.75fr] gap-x-2 w-full">
       <div className="flex gap-x-4 items-center">
-        <CountryDropdown
+        <SelectWithSearch
+          placeHolder="Select Country"
+          options={[{ label: "Followers", value: "10k" }]}
           mxWt="max-w-[10rem]"
-          onEmojiSelect={handleEmojiSelect}
         />
-        <span className="text-2xl">{selectedEmoji}</span>
+        <span className="text-2xl">🇳🇬</span>
         <div className="w-full md:hidden">
           <Select
             placeHolder="Gender"
@@ -43,7 +35,7 @@ const UsersTableFilter = () => {
         />
       </div>
       <div className="flex items-center gap-x-6 w-full">
-        <SearchBox placeholder="Search for by username" border="border" />
+        <SearchBox placeholder="Search for by username" />
         <div className="gap-x-6 items-center hidden md:flex w-full">
           <Select
             placeHolder="Followers"
