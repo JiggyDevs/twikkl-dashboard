@@ -18,9 +18,9 @@ const GroupTableFilter = () => {
       <div className="flex gap-x-4 items-center">
         <CountryDropdown
           onEmojiSelect={handleEmojiSelect}
-          mxWt="max-w-[10rem]"
+          mxWt="max-w-[12rem]"
         />
-        <span className="text-2xl">🇳🇬</span>
+        <span className="text-2xl">{selectedEmoji}</span>
         <div className="w-full md:hidden">
           <Select
             placeHolder="Group Type"

@@ -18,7 +18,7 @@ const UsersTableFilter = () => {
     <div className="grid gap-y-4 md:gap-y-0 md:grid-cols-[0.25fr_0.75fr] gap-x-2 w-full">
       <div className="flex gap-x-4 items-center">
         <CountryDropdown
-          mxWt="max-w-[10rem]"
+          mxWt="max-w-[12rem]"
           onEmojiSelect={handleEmojiSelect}
         />
         <span className="text-2xl">{selectedEmoji}</span>
