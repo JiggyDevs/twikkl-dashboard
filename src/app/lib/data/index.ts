@@ -64,3 +64,5 @@ export const durationType = [
   { label: "This Week", value: "this_week" },
   { label: "This Month", value: "this_month" },
 ];
+
+// export const userTable = Array.from()
