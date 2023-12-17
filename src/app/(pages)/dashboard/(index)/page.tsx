@@ -5,7 +5,7 @@ import TopEarnersCard from "@/app/ui/molecules/dashboard/TopEarnersCard";
 import VotersContainer from "@/app/ui/molecules/dashboard/VotersContainer";
 
 import CardWrapper from "@/app/ui/molecules/dashboard/CardWrapper";
-import { EngagementChartSkeleton } from "@/app/ui/organisms/Skeleton/EngagementChartSkeleton";
+import { EngagementChartSkeleton } from "../../../ui/organisms/Skeleton/EngagementChartSkeleton";
 
 const EngagementChart = dynamic(
   () => import("@/app/ui/molecules/dashboard/EngagementChart"),
