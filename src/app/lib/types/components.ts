@@ -37,7 +37,7 @@ export interface SelectValueAttributes {
 }
 export type ColumnDefinitionType<T, K extends keyof T> = {
   key: K;
-  name: string;
+  label: string;
   width?: number;
 };
 
@@ -49,3 +49,9 @@ export type TableProps<T, K extends keyof T> = {
 export type TableHeaderProps<T, K extends keyof T> = {
   columns: Array<ColumnDefinitionType<T, K>>;
 };
+
+export interface ModalStateAttribute {
+  type: null | string;
+  data: null | any;
+  isEnabled: boolean;
+}

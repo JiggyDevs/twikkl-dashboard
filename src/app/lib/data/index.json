@@ -4,7 +4,8 @@
       "label": "Total users",
       "type": "user",
       "value": "3.5m",
-      "percentage": 5
+      "percentage": 5,
+      "isChecked": true
     },
     {
       "label": "Total posts",
@@ -111,6 +112,442 @@
     {
       "image": "/img/profile.webp",
       "name": "guena.jgy"
+    }
+  ],
+  "twiKKlUserData": [
+    {
+      "username": "@ubongabasi.n",
+      "gender": "male",
+      "points": "20k",
+      "followers": "20.5k",
+      "following": "500k",
+      "posts": "5.5k",
+      "joinedDate": "Jan. 15, 2022",
+      "isChecked": true
+    },
+    {
+      "username": "@jenny.smith",
+      "gender": "female",
+      "points": "18k",
+      "followers": "15k",
+      "following": "300k",
+      "posts": "4.2k",
+      "joinedDate": "Mar. 20, 2021",
+      "isChecked": true
+    },
+    {
+      "username": "@alexJohnson",
+      "gender": "male",
+      "points": "25k",
+      "followers": "30k",
+      "following": "700k",
+      "posts": "6.8k",
+      "joinedDate": "Dec. 5, 2020",
+      "isChecked": true
+    },
+    {
+      "username": "@saraBrown",
+      "gender": "female",
+      "points": "22k",
+      "followers": "25k",
+      "following": "550k",
+      "posts": "5.9k",
+      "joinedDate": "Aug. 12, 2019",
+      "isChecked": true
+    },
+    {
+      "username": "@davidLee",
+      "gender": "male",
+      "points": "28k",
+      "followers": "40k",
+      "following": "900k",
+      "posts": "7.2k",
+      "joinedDate": "Jun. 8, 2020",
+      "isChecked": true
+    },
+    {
+      "username": "@oliviaCarter",
+      "gender": "female",
+      "points": "17k",
+      "followers": "12k",
+      "following": "250k",
+      "posts": "3.8k",
+      "joinedDate": "Sep. 30, 2021",
+      "isChecked": true
+    },
+    {
+      "username": "@michaelTaylor",
+      "gender": "male",
+      "points": "30k",
+      "followers": "50k",
+      "following": "1M",
+      "posts": "8.5k",
+      "joinedDate": "May 2, 2018",
+      "isChecked": true
+    },
+    {
+      "username": "@emmaJohnson",
+      "gender": "female",
+      "points": "19k",
+      "followers": "18k",
+      "following": "400k",
+      "posts": "4.6k",
+      "joinedDate": "Oct. 17, 2020",
+      "isChecked": true
+    },
+    {
+      "username": "@adamSmith",
+      "gender": "male",
+      "points": "23k",
+      "followers": "35k",
+      "following": "800k",
+      "posts": "6.1k",
+      "joinedDate": "Apr. 25, 2019",
+      "isChecked": true
+    },
+    {
+      "username": "@lucyAdams",
+      "gender": "female",
+      "points": "21k",
+      "followers": "22k",
+      "following": "600k",
+      "posts": "5.3k",
+      "joinedDate": "Jul. 8, 2021",
+      "isChecked": true
+    },
+    {
+      "username": "@graceWalker",
+      "gender": "female",
+      "points": "26k",
+      "followers": "28k",
+      "following": "650k",
+      "posts": "7.4k",
+      "joinedDate": "Nov. 9, 2019",
+      "isChecked": true
+    },
+    {
+      "username": "@danielBrown",
+      "gender": "male",
+      "points": "27k",
+      "followers": "45k",
+      "following": "850k",
+      "posts": "7.8k",
+      "joinedDate": "Feb. 14, 2020",
+      "isChecked": true
+    },
+    {
+      "username": "@miaClark",
+      "gender": "female",
+      "points": "15k",
+      "followers": "10k",
+      "following": "200k",
+      "posts": "3.2k",
+      "joinedDate": "Dec. 3, 2021",
+      "isChecked": true
+    },
+    {
+      "username": "@williamYoung",
+      "gender": "male",
+      "points": "24k",
+      "followers": "32k",
+      "following": "750k",
+      "posts": "6.5k",
+      "joinedDate": "Mar. 28, 2020",
+      "isChecked": true
+    },
+    {
+      "username": "@avaJohnson",
+      "gender": "female",
+      "points": "20k",
+      "followers": "24k",
+      "following": "580k",
+      "posts": "5.2k",
+      "joinedDate": "Sep. 1, 2021",
+      "isChecked": true
+    }
+  ],
+  "twiKKlGroupData": [
+    {
+      "name": "Binance",
+      "createdBy": "@ubongabasi.n",
+      "type": "Closed",
+      "members": "20.5k",
+      "date": "Jan. 15, 2022"
+    },
+    {
+      "name": "Coinbase",
+      "createdBy": "@johndoe",
+      "type": "Open",
+      "members": "30k",
+      "date": "Feb. 20, 2022"
+    },
+    {
+      "name": "Kraken",
+      "createdBy": "@sarahsmith",
+      "type": "Closed",
+      "members": "15k",
+      "date": "Mar. 10, 2022"
+    },
+    {
+      "name": "Bitfinex",
+      "createdBy": "@cryptoexpert",
+      "type": "Open",
+      "members": "25k",
+      "date": "Apr. 5, 2022"
+    },
+    {
+      "name": "Huobi",
+      "createdBy": "@trader123",
+      "type": "Closed",
+      "members": "18k",
+      "date": "May 8, 2022"
+    },
+    {
+      "name": "OKEx",
+      "createdBy": "@cryptoguru",
+      "type": "Open",
+      "members": "22k",
+      "date": "Jun. 12, 2022"
+    },
+    {
+      "name": "FTX",
+      "createdBy": "@ftxuser",
+      "type": "Closed",
+      "members": "17k",
+      "date": "Jul. 18, 2022"
+    },
+    {
+      "name": "Gemini",
+      "createdBy": "@gemtrader",
+      "type": "Open",
+      "members": "28k",
+      "date": "Aug. 22, 2022"
+    },
+    {
+      "name": "Bittrex",
+      "createdBy": "@cryptoenthusiast",
+      "type": "Closed",
+      "members": "16k",
+      "date": "Sep. 25, 2022"
+    },
+    {
+      "name": "KuCoin",
+      "createdBy": "@kucoinuser",
+      "type": "Open",
+      "members": "24k",
+      "date": "Oct. 30, 2022"
+    },
+    {
+      "name": "Bitstamp",
+      "createdBy": "@tradestamp",
+      "type": "Closed",
+      "members": "19k",
+      "date": "Nov. 5, 2022"
+    },
+    {
+      "name": "Gate.io",
+      "createdBy": "@gateuser",
+      "type": "Open",
+      "members": "27k",
+      "date": "Dec. 12, 2022"
+    },
+    {
+      "name": "BitMEX",
+      "createdBy": "@leveragetrader",
+      "type": "Closed",
+      "members": "14k",
+      "date": "Jan. 8, 2023"
+    },
+    {
+      "name": "Liquid",
+      "createdBy": "@liquidtrader",
+      "type": "Open",
+      "members": "26k",
+      "date": "Feb. 14, 2023"
+    },
+    {
+      "name": "CEX.IO",
+      "createdBy": "@cexuser",
+      "type": "Closed",
+      "members": "13k",
+      "date": "Mar. 20, 2023"
+    },
+    {
+      "name": "Upbit",
+      "createdBy": "@upbittrader",
+      "type": "Open",
+      "members": "29k",
+      "date": "Apr. 25, 2023"
+    },
+    {
+      "name": "BitFlyer",
+      "createdBy": "@flyertrader",
+      "type": "Closed",
+      "members": "12k",
+      "date": "May 30, 2023"
+    },
+    {
+      "name": "ZB.com",
+      "createdBy": "@zbuser",
+      "type": "Open",
+      "members": "31k",
+      "date": "Jun. 6, 2023"
+    },
+    {
+      "name": "EXMO",
+      "createdBy": "@exmouser",
+      "type": "Closed",
+      "members": "11k",
+      "date": "Jul. 12, 2023"
+    },
+    {
+      "name": "HitBTC",
+      "createdBy": "@hitbtcuser",
+      "type": "Open",
+      "members": "32k",
+      "date": "Aug. 18, 2023"
+    }
+  ],
+  "twiKKlWalletData": [
+    {
+      "username": "@ubongabasi.n",
+      "balance": "$4,950.80",
+      "digitalArt": "02",
+      "tokens": "20.5K",
+      "address": "twk1q93...48fjdk"
+    },
+    {
+      "username": "@johndoe",
+      "balance": "$3,200.50",
+      "digitalArt": "05",
+      "tokens": "15K",
+      "address": "xzc1d32...72slnm"
+    },
+    {
+      "username": "@sarahsmith",
+      "balance": "$6,700.20",
+      "digitalArt": "01",
+      "tokens": "25K",
+      "address": "opl90as...asd123"
+    },
+    {
+      "username": "@cryptoexpert",
+      "balance": "$9,300.10",
+      "digitalArt": "03",
+      "tokens": "30K",
+      "address": "qwe12df...zxcvbn"
+    },
+    {
+      "username": "@trader123",
+      "balance": "$7,600.75",
+      "digitalArt": "08",
+      "tokens": "18K",
+      "address": "mnbv45l...poi098"
+    },
+    {
+      "username": "@cryptoguru",
+      "balance": "$5,400.40",
+      "digitalArt": "11",
+      "tokens": "22K",
+      "address": "iuyt67a...qwer56"
+    },
+    {
+      "username": "@ftxuser",
+      "balance": "$8,100.60",
+      "digitalArt": "09",
+      "tokens": "17K",
+      "address": "plm098z...bnm432"
+    },
+    {
+      "username": "@gemtrader",
+      "balance": "$4,300.90",
+      "digitalArt": "14",
+      "tokens": "28K",
+      "address": "lkj987x...7890qw"
+    },
+    {
+      "username": "@cryptoenthusiast",
+      "balance": "$6,000.30",
+      "digitalArt": "07",
+      "tokens": "16K",
+      "address": "poi987w...zxcvbn"
+    },
+    {
+      "username": "@kucoinuser",
+      "balance": "$7,900.20",
+      "digitalArt": "06",
+      "tokens": "24K",
+      "address": "asdf34g...qwer90"
+    },
+    {
+      "username": "@tradestamp",
+      "balance": "$5,200.50",
+      "digitalArt": "12",
+      "tokens": "19K",
+      "address": "zxcv89n...mnbv34"
+    },
+    {
+      "username": "@gateuser",
+      "balance": "$9,700.80",
+      "digitalArt": "04",
+      "tokens": "27K",
+      "address": "qwer12l...yui890"
+    },
+    {
+      "username": "@leveragetrader",
+      "balance": "$4,000.20",
+      "digitalArt": "15",
+      "tokens": "14K",
+      "address": "hjkl678...tyuiop"
+    },
+    {
+      "username": "@liquidtrader",
+      "balance": "$8,500.70",
+      "digitalArt": "10",
+      "tokens": "26K",
+      "address": "bnm345v...asdf67"
+    },
+    {
+      "username": "@cexuser",
+      "balance": "$3,700.40",
+      "digitalArt": "13",
+      "tokens": "13K",
+      "address": "poiuy78...zxcv32"
+    },
+    {
+      "username": "@upbittrader",
+      "balance": "$6,300.60",
+      "digitalArt": "18",
+      "tokens": "29K",
+      "address": "mnbvc21...qwer76"
+    },
+    {
+      "username": "@flyertrader",
+      "balance": "$2,800.90",
+      "digitalArt": "20",
+      "tokens": "12K",
+      "address": "lkjh90a...0987po"
+    },
+    {
+      "username": "@zbuser",
+      "balance": "$7,100.30",
+      "digitalArt": "17",
+      "tokens": "31K",
+      "address": "qwerty1...asdfg2"
+    },
+    {
+      "username": "@exmouser",
+      "balance": "$2,500.20",
+      "digitalArt": "19",
+      "tokens": "11K",
+      "address": "zxcv123...bnm456"
+    },
+    {
+      "username": "@hitbtcuser",
+      "balance": "$8,900.40",
+      "digitalArt": "16",
+      "tokens": "32K",
+      "address": "poi0987...qwer543"
     }
   ]
 }

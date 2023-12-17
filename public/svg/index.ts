@@ -18,3 +18,8 @@ export { default as TwikklVerifiedIcon } from "./VerifiedIcon";
 export { default as ReloadIcon } from "./ReloadIcon";
 export { default as HamburgerIcon } from "./HamburgerIcon";
 export { default as CloseIcon } from "./CloseIcon";
+export { default as TickIcon } from "./TickIcon";
+export { default as TableActionIcon } from "./TableActionIcon";
+export { default as ArrowRightIcon } from "./ArrowRightIcon";
+export { default as ArrowLeftIcon } from "./ArrowLeftIcon";
+export { default as ArrowDownIcon } from "./ArrowDownIcon";

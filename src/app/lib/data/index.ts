@@ -6,6 +6,12 @@ import {
   ReportsIcon,
   SettingsIcon,
 } from "../../../../public/svg";
+import {
+  TwikkleGroupsAttribute,
+  TwikkleUsersAttribute,
+  TwikkleWalletsAttribute,
+} from "../types";
+import { ColumnDefinitionType } from "../types/components";
 
 export const navLinks = [
   { name: "Home", href: "/dashboard", icon: DashboardHomeIcon },
@@ -65,4 +71,37 @@ export const durationType = [
   { label: "This Month", value: "this_month" },
 ];
 
-// export const userTable = Array.from()
+export const userTableHeaders: ColumnDefinitionType<
+  TwikkleUsersAttribute,
+  keyof TwikkleUsersAttribute
+>[] = [
+  { label: "Username", key: "username" },
+  { label: "Gender", key: "gender" },
+  { label: "Points", key: "points" },
+  { label: "Followers", key: "followers" },
+  { label: "Following", key: "following" },
+  { label: "Posts", key: "posts" },
+  { label: "Date Joined", key: "joinedDate" },
+];
+
+export const groupTableHeaders: ColumnDefinitionType<
+  TwikkleGroupsAttribute,
+  keyof TwikkleGroupsAttribute
+>[] = [
+  { label: "Group Name", key: "name" },
+  { label: "Created By", key: "createdBy" },
+  { label: "Group Type", key: "type" },
+  { label: "Members", key: "members" },
+  { label: "Date Created", key: "date" },
+];
+
+export const walletTableHeaders: ColumnDefinitionType<
+  TwikkleWalletsAttribute,
+  keyof TwikkleWalletsAttribute
+>[] = [
+  { label: "Username", key: "username" },
+  { label: "Wallet Balance", key: "balance" },
+  { label: "Digital Art", key: "digitalArt" },
+  { label: "Tokens", key: "tokens" },
+  { label: "Wallet Address", key: "address" },
+];
