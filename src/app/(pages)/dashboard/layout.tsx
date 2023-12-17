@@ -1,8 +1,8 @@
 "use client";
 
+import Modal from "@/app/ui/organisms/Modals";
 import NavBar from "@/app/ui/organisms/NavBar";
 import SideBar from "@/app/ui/organisms/SideBar";
-import Modal from "@/app/ui/organisms/Modals";
 import clsx from "clsx";
 import React, { useCallback, useState } from "react";
 
