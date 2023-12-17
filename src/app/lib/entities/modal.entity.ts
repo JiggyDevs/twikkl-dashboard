@@ -1,5 +1,5 @@
 import { entity } from "simpler-state";
-import { ModalStateAttribute } from "../types";
+import { ModalStateAttribute } from "../types/components";
 
 export const defaultModalState: ModalStateAttribute = {
   type: null,
