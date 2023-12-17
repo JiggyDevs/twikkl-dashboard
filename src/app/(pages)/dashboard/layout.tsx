@@ -1,10 +1,10 @@
 "use client";
 
-import Modal from "@/app/ui/organisms/Modals";
-import NavBar from "@/app/ui/organisms/NavBar";
-import SideBar from "@/app/ui/organisms/SideBar";
 import clsx from "clsx";
 import React, { useCallback, useState } from "react";
+import NavBar from "@/app/ui/organisms/NavBar";
+import SideBar from "@/app/ui/organisms/SideBar";
+import Modal from "../../ui/organisms/Modals/index";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const [isOpen, setIsOpen] = useState(false);
