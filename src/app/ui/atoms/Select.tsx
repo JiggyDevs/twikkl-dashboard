@@ -10,11 +10,13 @@ import { SelectValueType } from "@/app/lib/types/components";
 const Select = ({
   options,
   mxWt,
+  mxHt = "max-h-[15rem]",
   placeHolder,
   extraStyle,
 }: {
   options: SelectValueType[];
   mxWt?: string;
+  mxHt?: string;
   placeHolder?: string;
   extraStyle?: string;
 }) => {
@@ -47,10 +49,11 @@ const Select = ({
       </div>
       <div
         className={clsx(
-          "absolute top-12 w-full left-0 cursor-pointer transition-all duration-150 transform origin-top z-50",
+          "absolute top-12 w-full left-0 cursor-pointer transition-all duration-150 transform origin-top z-50 overflow-y-auto",
           toggleList
             ? "opacity-100 scale-100"
-            : "opacity-0 scale-95 cursor-none pointer-events-none"
+            : "opacity-0 scale-95 cursor-none pointer-events-none",
+          mxHt
         )}
       >
         {options?.map(({ label, value }) => (

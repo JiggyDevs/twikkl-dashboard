@@ -12,7 +12,7 @@ const TopEarnersCard = () => {
         <h1 className="font-medium">Top Earners</h1>
         <Select
           placeHolder="This month"
-          mxWt="max-w-[8rem]"
+          mxWt="max-w-[9rem]"
           options={selectMonths}
         />
       </div>
