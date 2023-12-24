@@ -1,5 +1,7 @@
 import { selectMonths } from "@/app/lib/data";
-import Select from "../../atoms/Select";
+
+import Select from "@/app/ui/atoms/Select";
+
 import data from "@/app/lib/data/index.json";
 import Image from "next/image";
 import { TwikklVerifiedIcon } from "../../../../../public/svg";

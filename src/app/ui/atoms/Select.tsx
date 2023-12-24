@@ -60,7 +60,7 @@ const Select = ({
           <div
             key={label}
             className={clsx(
-              "flex items-center justify-between py-3 px-4 first:rounded-t-md  last:border-0 last:rounded-b-md hover:bg-[#c1e0bd] shadow cursor-pointer",
+              "flex items-center justify-between py-3 px-4 first:rounded-t-md  last:border-0 last:rounded-b-md hover:bg-[#c1e0bd] hover:last:border-0 hover:last:rounded-b-md shadow cursor-pointer",
               label === selectedItem?.label
                 ? "bg-twikkl-primary text-white"
                 : "bg-twikkl-tertiary"

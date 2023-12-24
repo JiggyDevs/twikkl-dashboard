@@ -23,12 +23,19 @@ export const navLinks = [
 ];
 
 export const cardsColorMap = {
-  user: "bg-[#A09640]",
-  post: "bg-[#40A066]",
-  engagement: "bg-[#A0409C]",
-  group: "bg-[#A05740]",
-  wallet: "bg-[#404AA0]",
+  lightOrange: "bg-[#A09640]",
+  green: "bg-[#40A066]",
+  purple: "bg-[#A0409C]",
+  darkOrange: "bg-[#A05740]",
+  darkBlue: "bg-[#404AA0]",
 };
+
+export const singleUserInfo = [
+  { label: "Total posts", value: "23" },
+  { label: "Followers", value: "20.5k" },
+  { label: "Following", value: "500k" },
+  { label: "Total points", value: "60" },
+];
 
 export const selectMonths = [
   { label: "January", value: 1 },

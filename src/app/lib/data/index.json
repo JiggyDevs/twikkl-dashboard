@@ -2,32 +2,27 @@
   "cardDatas": [
     {
       "label": "Total users",
-      "type": "user",
       "value": "3.5m",
       "percentage": 5,
       "isChecked": true
     },
     {
       "label": "Total posts",
-      "type": "post",
       "value": "500m",
       "percentage": 0.5
     },
     {
       "label": "Total engagements",
-      "type": "engagement",
       "value": "100m",
       "percentage": 20
     },
     {
       "label": "Total groups",
-      "type": "group",
       "value": "500k",
       "percentage": 25
     },
     {
       "label": "Wallet balance",
-      "type": "wallet",
       "value": "5.8b",
       "percentage": -0.02
     }
@@ -548,6 +543,21 @@
       "digitalArt": "16",
       "tokens": "32K",
       "address": "poi0987...qwer543"
+    }
+  ],
+  "singleUserInfo": [
+    { "label": "Total posts", "value": "23" },
+    { "label": "Followers", "value": "20.5k" },
+    { "label": "Following", "value": "500k" },
+    { "label": "Total points", "value": "60" }
+  ],
+  "recentPosts": [
+    {
+      "img": "/img/profile.webp",
+      "content": "The joy of using AI is like discovering a whole new world! 🌍✨ It's fascinating to see how artificial intelligence can simplify tasks and make our lives easier.",
+      "tags": ["#AIWonderland", "#TechMagic"],
+      "time": "12 hrs ago",
+      "video": "/img/profile.webp"
     }
   ]
 }

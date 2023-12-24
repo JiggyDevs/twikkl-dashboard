@@ -2,10 +2,13 @@ import dynamic from "next/dynamic";
 
 import ActiveUsersCard from "@/app/ui/molecules/dashboard/ActiveUsers";
 import TopEarnersCard from "@/app/ui/molecules/dashboard/TopEarnersCard";
-import VotersContainer from "@/app/ui/molecules/dashboard/VotersContainer";
+import VotersCard from "@/app/ui/molecules/dashboard/VotersCard";
 
 import CardWrapper from "@/app/ui/molecules/dashboard/CardWrapper";
+
 import { EngagementChartSkeleton } from "@/app/ui/organisms/Skeleton/EngagementChartSkeleton";
+
+import data from "@/app/lib/data/index.json";
 
 const EngagementChart = dynamic(
   () => import("@/app/ui/molecules/dashboard/EngagementChart"),
@@ -13,6 +16,8 @@ const EngagementChart = dynamic(
 );
 
 const Page = () => {
+  const { votersData } = data;
+
   return (
     <div className="grid gap-y-6 w-full">
       <CardWrapper />
@@ -24,7 +29,7 @@ const Page = () => {
             <ActiveUsersCard />
           </div>
         </div>
-        <VotersContainer />
+        <VotersCard label="Voters" data={votersData} />
       </div>
     </div>
   );

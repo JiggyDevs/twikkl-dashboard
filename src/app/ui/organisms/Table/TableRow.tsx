@@ -1,17 +1,34 @@
+"use client";
+
+import { usePathname, useRouter } from "next/navigation";
+
 import { TableProps } from "@/app/lib/types/components";
 import CheckBox from "../../atoms/CheckBox";
 import clsx from "clsx";
+
 import { TableActionIcon } from "../../../../../public/svg";
+import { useCallback } from "react";
 
 const TableRows = <T, K extends keyof T>({
   data,
   columns,
 }: TableProps<T, K>): JSX.Element => {
   const columnData = [...columns, { action: "" }] as typeof columns;
+  const router = useRouter();
+  const pathname = usePathname();
+
+  const navigateToPage = useCallback(
+    (id: string | number) => router.push(pathname + "/" + id),
+    []
+  );
 
   const rows = data?.map((row, index) => {
     return (
-      <tr key={`row-${index}`} className="border-t border-twikkl-inactive">
+      <tr
+        key={`row-${index}`}
+        className="border-t border-twikkl-inactive cursor-pointer hover:bg-twikkl-inactive"
+        onClick={() => navigateToPage(index)}
+      >
         {columnData?.map((column, rowIndex) => {
           return (
             <td
