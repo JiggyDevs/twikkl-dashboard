@@ -49,7 +49,7 @@ const Select = ({
       </div>
       <div
         className={clsx(
-          "absolute top-12 w-full left-0 cursor-pointer transition-all duration-150 transform origin-top z-50 overflow-y-auto",
+          "absolute top-12 w-full left-0 cursor-pointer transition-all duration-150 transform origin-top z-50 overflow-y-auto border rounded-md",
           toggleList
             ? "opacity-100 scale-100"
             : "opacity-0 scale-95 cursor-none pointer-events-none",
@@ -60,7 +60,7 @@ const Select = ({
           <div
             key={label}
             className={clsx(
-              "flex items-center justify-between py-3 px-4 first:rounded-t-md  last:border-0 last:rounded-b-md hover:bg-[#c1e0bd] shadow cursor-pointer",
+              "flex items-center justify-between py-3 px-4 first:rounded-t-md  last:border-0 last:rounded-b-md hover:bg-[#c1e0bd] hover:last:border-0 hover:last:rounded-b-md shadow cursor-pointer",
               label === selectedItem?.label
                 ? "bg-twikkl-primary text-white"
                 : "bg-twikkl-tertiary"

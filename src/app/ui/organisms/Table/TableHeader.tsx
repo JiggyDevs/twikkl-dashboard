@@ -10,12 +10,12 @@ const TableHeader = <T, K extends keyof T>({
       return (
         <th
           className={clsx(
-            "p-4 text-twikkl-tertiary font-normal",
-            index === 0 ? "flex gap-x-4 items-center" : ""
+            "p-4 text-twikkl-tertiary font-normal"
+            // index === 0 ? "flex gap-x-4 items-center" : ""
           )}
           key={`heading-${index}-${column.label}`}
         >
-          {index === 0 ? <CheckBox type="secondary" /> : null}
+          {/* {index === 0 ? <CheckBox type="secondary" /> : null} */}
           {column.label}
         </th>
       );

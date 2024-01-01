@@ -23,3 +23,4 @@ export { default as TableActionIcon } from "./TableActionIcon";
 export { default as ArrowRightIcon } from "./ArrowRightIcon";
 export { default as ArrowLeftIcon } from "./ArrowLeftIcon";
 export { default as ArrowDownIcon } from "./ArrowDownIcon";
+export { default as VolumeIcon } from "./VolumeIcon";
