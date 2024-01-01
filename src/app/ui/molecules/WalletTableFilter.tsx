@@ -4,7 +4,7 @@ import { useState } from "react";
 import SearchBox from "../atoms/SearchBox";
 import Select from "../atoms/Select";
 import CountryDropdown from "./CountryDropdown";
-import platformConstants from "@/app/lib/utils/platformConstants";
+import platformConstants from "@/app/lib/config/platformConstants";
 
 const WalletTableFilter = () => {
   const [selectedEmoji, setSelectedEmoji] = useState("🇳🇬");

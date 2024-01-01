@@ -49,7 +49,7 @@ const Select = ({
       </div>
       <div
         className={clsx(
-          "absolute top-12 w-full left-0 cursor-pointer transition-all duration-150 transform origin-top z-50 overflow-y-auto",
+          "absolute top-12 w-full left-0 cursor-pointer transition-all duration-150 transform origin-top z-50 overflow-y-auto border rounded-md",
           toggleList
             ? "opacity-100 scale-100"
             : "opacity-0 scale-95 cursor-none pointer-events-none",

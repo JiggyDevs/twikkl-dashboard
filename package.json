@@ -15,6 +15,7 @@
     "react": "^18",
     "react-apexcharts": "^1.4.1",
     "react-dom": "^18",
+    "react-player": "^2.14.1",
     "simpler-state": "^1.2.1"
   },
   "devDependencies": {

@@ -551,13 +551,100 @@
     { "label": "Following", "value": "500k" },
     { "label": "Total points", "value": "60" }
   ],
-  "recentPosts": [
+  "groupInfo": [
+    { "label": "Total posts", "value": "100" },
+    { "label": "Members", "value": "1.5k" },
+    { "label": "Admins", "value": "03" },
+    { "label": "Balance", "value": "$1.5k" }
+  ],
+  "userRecentPosts": [
     {
       "img": "/img/profile.webp",
       "content": "The joy of using AI is like discovering a whole new world! 🌍✨ It's fascinating to see how artificial intelligence can simplify tasks and make our lives easier",
       "tags": ["#AIWonderland", "#TechMagic"],
       "time": "12 hrs ago",
-      "video": "/img/profile.webp"
+      "video": "https://youtu.be/SAY30lci8mI?si=zCab6sgKg-hjHhdG",
+      "username": "maxwell.jgy"
+    },
+    {
+      "img": "/img/profile.webp",
+      "content": "The intersection of AI and cryptocurrency is fascinating! Witnessing how AI augments crypto trading strategies is truly groundbreaking. 🤖💱",
+      "tags": ["#AICrypto", "#CryptoTrading"],
+      "time": "10 hrs ago",
+      "video": "https://youtu.be/SAY30lci8mI?si=zCab6sgKg-hjHhdG",
+      "username": "ethan.jgy"
+    },
+    {
+      "img": "/img/profile.webp",
+      "content": "AI-driven analytics is revolutionizing crypto investment decisions! Witnessing the power of predictive algorithms in the crypto market is awe-inspiring. 📈🔍",
+      "tags": ["#AICryptoAnalysis", "#InvestmentTech"],
+      "time": "8 hrs ago",
+      "video": "https://youtu.be/SAY30lci8mI?si=zCab6sgKg-hjHhdG",
+      "username": "sonia.lens"
+    },
+    {
+      "img": "/img/profile.webp",
+      "content": "AI-powered cybersecurity is critical for securing crypto assets! Witnessing advancements in protecting digital currencies is crucial. 🔒💻",
+      "tags": ["#AICryptoSecurity", "#CyberDefense"],
+      "time": "6 hrs ago",
+      "video": "https://youtu.be/SAY30lci8mI?si=zCab6sgKg-hjHhdG",
+      "username": "lacy.lens"
+    },
+    {
+      "img": "/img/profile.webp",
+      "content": "The fusion of AI and blockchain unlocks endless possibilities! Witnessing decentralized AI applications reshape industries is mind-blowing. 🌐🔗",
+      "tags": ["#AIBlockchain", "#DecentralizedTech"],
+      "time": "5 hrs ago",
+      "video": "https://youtu.be/SAY30lci8mI?si=zCab6sgKg-hjHhdG",
+      "username": "amta.bash"
+    },
+    {
+      "img": "/img/profile.webp",
+      "content": "AI's role in understanding crypto market sentiment is game-changing! Witnessing sentiment analysis influence trading decisions is intriguing. 🤖📊",
+      "tags": ["#AISentimentAnalysis", "#MarketInsights"],
+      "time": "4 hrs ago",
+      "video": "https://youtu.be/SAY30lci8mI?si=zCab6sgKg-hjHhdG",
+      "username": "jerry.jgy"
+    },
+    {
+      "img": "/img/profile.webp",
+      "content": "The evolution of AI in predicting crypto trends is impressive! Witnessing predictive models forecast market movements is transformative. 📈🔮",
+      "tags": ["#AIPredictiveModels", "#CryptoTrends"],
+      "time": "3 hrs ago",
+      "video": "https://youtu.be/SAY30lci8mI?si=zCab6sgKg-hjHhdG",
+      "username": "jerry.jgy"
+    },
+    {
+      "img": "/img/profile.webp",
+      "content": "AI's impact on crypto mining efficiency is remarkable! Witnessing AI optimize mining processes is a game-changer for sustainability. ⛏️♻️",
+      "tags": ["#AIMining", "#CryptoEfficiency"],
+      "time": "2 hrs ago",
+      "video": "https://youtu.be/SAY30lci8mI?si=zCab6sgKg-hjHhdG",
+      "username": "jerry.jgy"
+    },
+    {
+      "img": "/img/profile.webp",
+      "content": "AI-driven decentralized finance is reshaping the future of transactions! Witnessing DeFi advancements is revolutionizing the financial landscape. 💳💸",
+      "tags": ["#AIDeFi", "#DeFiRevolution"],
+      "time": "1 hr ago",
+      "video": "https://youtu.be/SAY30lci8mI?si=zCab6sgKg-hjHhdG",
+      "username": "jerry.jgy"
+    },
+    {
+      "img": "/img/profile.webp",
+      "content": "AI's potential in verifying crypto transactions is streamlining processes! Witnessing faster and secure transactions is the future of finance. 🔄🔐",
+      "tags": ["#AITransactionVerification", "#CryptoSecurity"],
+      "time": "45 mins ago",
+      "video": "https://youtu.be/SAY30lci8mI?si=zCab6sgKg-hjHhdG",
+      "username": "jerry.jgy"
+    },
+    {
+      "img": "/img/profile.webp",
+      "content": "AI's integration with NFTs opens new avenues for digital ownership! Witnessing AI-enhanced digital collectibles is redefining art and ownership. 🖼️🤖",
+      "tags": ["#AINFTs", "#DigitalOwnership"],
+      "time": "30 mins ago",
+      "video": "https://youtu.be/SAY30lci8mI?si=zCab6sgKg-hjHhdG",
+      "username": "jerry.jgy"
     }
   ]
 }

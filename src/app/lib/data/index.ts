@@ -83,6 +83,13 @@ export const durationType = [
   { label: "This Month", value: "this_month" },
 ];
 
+export const timeLine = [
+  { label: "Today", value: "today" },
+  { label: "Last 1 hour", value: "last-1-hour" },
+  { label: "Last 30 minutes", value: "last-30-minutes" },
+  { label: "Just now", value: "now" },
+];
+
 export const userTableHeaders: ColumnDefinitionType<
   TwikkleUsersAttribute,
   keyof TwikkleUsersAttribute

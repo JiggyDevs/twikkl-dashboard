@@ -10,7 +10,7 @@ import {
 
 import clsx from "clsx";
 
-import { RE_DIGIT } from "@/app/lib/config/platformConstants";
+import platformConstant from "@/app/lib/config/platformConstants";
 
 import {
   handleInputfocusToNext,
@@ -32,7 +32,7 @@ const OTPComponent = ({
     for (let i = 0; i < 4; i++) {
       const char = valueArray[i];
 
-      if (RE_DIGIT.test(char)) {
+      if (platformConstant.RE_DIGIT.test(char)) {
         items.push(char);
       } else {
         items.push("");
@@ -47,7 +47,7 @@ const OTPComponent = ({
 
     let targetValue = target.value.trim();
 
-    const isTargetValueDigit = RE_DIGIT.test(targetValue);
+    const isTargetValueDigit = platformConstant.RE_DIGIT.test(targetValue);
 
     if (!isTargetValueDigit && targetValue !== "") {
       return;

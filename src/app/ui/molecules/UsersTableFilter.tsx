@@ -5,7 +5,7 @@ import SearchBox from "../atoms/SearchBox";
 import Select from "../atoms/Select";
 import CountryDropdown from "./CountryDropdown";
 import { userSelectFilter } from "@/app/lib/data";
-import platformConstants from "@/app/lib/utils/platformConstants";
+import platformConstants from "@/app/lib/config/platformConstants";
 
 const UsersTableFilter = () => {
   const [selectedEmoji, setSelectedEmoji] = useState("🇳🇬");

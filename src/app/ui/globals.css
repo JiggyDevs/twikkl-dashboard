@@ -21,6 +21,9 @@
   width: 0.5rem;
   border-radius: 1rem;
 }
+.react-player__preview {
+  @apply rounded-lg;
+}
 
 @tailwind components;
 @tailwind utilities;

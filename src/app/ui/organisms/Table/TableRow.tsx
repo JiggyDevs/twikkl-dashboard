@@ -3,7 +3,7 @@
 import { usePathname, useRouter } from "next/navigation";
 
 import { TableProps } from "@/app/lib/types/components";
-import CheckBox from "../../atoms/CheckBox";
+// import CheckBox from "../../atoms/CheckBox";
 import clsx from "clsx";
 
 import { TableActionIcon } from "../../../../../public/svg";
@@ -27,18 +27,20 @@ const TableRows = <T, K extends keyof T>({
       <tr
         key={`row-${index}`}
         className="border-t border-twikkl-inactive cursor-pointer hover:bg-twikkl-inactive"
-        onClick={() => navigateToPage(index)}
+        onClick={() =>
+          pathname.endsWith("wallets") ? null : navigateToPage(index)
+        }
       >
         {columnData?.map((column, rowIndex) => {
           return (
             <td
               key={`cell-${rowIndex}`}
               className={clsx(
-                "p-4 font-normal text-twikkl-main",
-                rowIndex === 0 ? "flex gap-x-4 items-center" : null
+                "p-4 font-normal text-twikkl-main"
+                // rowIndex === 0 ? "flex gap-x-4 items-center" : null
               )}
             >
-              {rowIndex === 0 ? <CheckBox id={index + "row-data"} /> : null}
+              {/* {rowIndex === 0 ? <CheckBox id={index + "row-data"} /> : null} */}
               {row[column.key] as string}
 
               {columnData.length - 1 === rowIndex ? <TableActionIcon /> : null}
