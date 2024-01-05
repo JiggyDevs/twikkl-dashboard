@@ -2,9 +2,14 @@
 
 import dynamic from "next/dynamic";
 import {
+  ArrowLeftIcon,
   ArrowRightIcon,
   CloseIcon,
+  CommentIcon,
+  FlagIcon,
+  LikeIcon,
   LocationIcon,
+  ShareLinkIcon,
   VolumeIcon,
 } from "../../../../../../public/svg";
 import Image from "next/image";
@@ -12,10 +17,10 @@ import Image from "next/image";
 const ReactPlayer = dynamic(() => import("react-player/lazy"), { ssr: false });
 
 const RecentSinglePage = ({ params }: { params: { slug: string } }) => {
-  console.log(params);
+  //   console.log(params);
   return (
-    <div className="grid grid-cols-[0.6fr_0.4fr] h-[85vh] gap-x-6">
-      <div className="bg-[#000000] px-8 flex items-center justify-between relative">
+    <div className="grid grid-cols-[8fr_2fr] h-[85vh] gap-x-6 w-full">
+      <div className="bg-[#000000] px-8 flex items-center justify-between relative w-full">
         <span className="self-start mt-8">
           <CloseIcon color="#fff" />
         </span>
@@ -36,7 +41,8 @@ const RecentSinglePage = ({ params }: { params: { slug: string } }) => {
           <VolumeIcon />
         </span>
       </div>
-      <div className="">
+      <div className="flex flex-col gap-y-4">
+        {/* user info follow and content */}
         <div className="bg-twikkl-tertiary rounded-3xl p-6 space-y-6">
           <div className="flex items-center justify-between">
             <div className="flex gap-x-4 items-start cursor-pointer">
@@ -83,6 +89,45 @@ const RecentSinglePage = ({ params }: { params: { slug: string } }) => {
             </span>
           </div>
         </div>
+        {/* likes, comment and flags */}
+        <div className="text-twikkl-primary flex items-center justify-between">
+          <div className="font-medium flex items-center gap-x-6">
+            <div className="flex items-center gap-x-2">
+              <LikeIcon />
+              <span>6.1M</span>
+            </div>
+            <div className="flex items-center gap-x-2">
+              <CommentIcon />
+              <span>32.5K</span>
+            </div>
+            <div className="flex items-center gap-x-2">
+              <FlagIcon />
+              <span>487.6K</span>
+            </div>
+          </div>
+          {/* share links */}
+          <div className="flex gap-x-6">
+            <div className="h-10 w-10 bg-twikkl-main rounded-full flex justify-center items-center gap-x-1">
+              <ArrowLeftIcon color="#fff" />
+              <ArrowRightIcon color="#fff" />
+            </div>
+            <div className="flex items-center gap-x-2 text-twikkl-main">
+              <ShareLinkIcon />
+              <span>Share</span>
+            </div>
+          </div>
+        </div>
+        {/* copy link */}
+        <div className="flex bg-white py-2 px-6 rounded-lg items-center gap-8">
+          <span className="text-twikkl-inactive">
+            https:www.twikkl.com/@maxwell.jgy/video/782356323.2456..
+          </span>
+          <span className="text-twikkl-main text whitespace-nowrap">
+            Copy Link
+          </span>
+        </div>
+        {/* copy link */}
+        lll
       </div>
     </div>
   );

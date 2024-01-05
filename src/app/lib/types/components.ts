@@ -19,6 +19,20 @@ export interface InputAttributes extends HTMLAttributes<HTMLInputElement> {
   };
 }
 
+export interface TextAreaAttributes
+  extends HTMLAttributes<HTMLTextAreaElement> {
+  name?: string;
+  label?: string;
+  type?: string;
+  suffix?: ReactNode;
+  mxWt?: string;
+  border?: string;
+  extraInfo?: {
+    label: string;
+    to?: string;
+  };
+}
+
 export interface SelectValueType {
   label: string;
   value: any;
