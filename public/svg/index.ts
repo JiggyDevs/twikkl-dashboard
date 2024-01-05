@@ -24,3 +24,8 @@ export { default as ArrowRightIcon } from "./ArrowRightIcon";
 export { default as ArrowLeftIcon } from "./ArrowLeftIcon";
 export { default as ArrowDownIcon } from "./ArrowDownIcon";
 export { default as VolumeIcon } from "./VolumeIcon";
+export { default as LocationIcon } from "./LocationIcon";
+export { default as CommentIcon } from "./CommentIcon";
+export { default as FlagIcon } from "./FlagIcon";
+export { default as LikeIcon } from "./LikeIcon";
+export { default as ShareLinkIcon } from "./ShareLinkIcon";
