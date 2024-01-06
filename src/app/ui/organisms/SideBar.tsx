@@ -6,7 +6,7 @@ import { CalendarTimeIcon, LogoutIcon } from "../../../../public/svg";
 const SideBar = ({ toggleSidebar }: { toggleSidebar: () => void }) => {
   return (
     <aside className="bg-twikkl-main h-[95vh] md:h-screen flex flex-col pb-4 pt-2 transition-all duration-200">
-      <div className="flex flex-col gap-y-4">
+      <div className="flex flex-col gap-y-4 h-full">
         <Link href="/dashboard" className="flex items-center">
           <Image
             src="/img/twikkl_logo.webp"
@@ -21,26 +21,21 @@ const SideBar = ({ toggleSidebar }: { toggleSidebar: () => void }) => {
           </div>
         </Link>
 
-        <NavLink toggleSideBar={toggleSidebar} />
-      </div>
-      <div className="flex flex-col items-stretch justify-between flex-1  gap-y-5 py-4 px-6">
-        <button
-          className="grid grid-cols-[0.2fr_0.81fr] items-center py-3 pl-3 rounded-lg"
-          onClick={toggleSidebar}
-        >
-          <LogoutIcon />
-          <span className="text-left text-twikkl-inactive">Log out</span>
-        </button>
+        <div className="flex flex-col justify-between flex-grow">
+          <NavLink toggleSideBar={toggleSidebar} />
 
-        <div
-          className="grid grid-cols-[0.17fr_0.83fr] items-center pt-3 pl-4 rounded-lg"
-          onClick={toggleSidebar}
-        >
-          <CalendarTimeIcon />
+          <div
+            className="grid grid-cols-[0.17fr_0.83fr] items-center pt-3 pl-4 rounded-lg mx-4"
+            onClick={toggleSidebar}
+          >
+            <CalendarTimeIcon />
 
-          <div className="flex flex-col text-sm">
-            <span className="text-twikkl-primary">01:40am</span>
-            <span className="text-twikkl-inactive">Monday 30th Oct. 2023</span>
+            <p className="flex flex-col text-sm">
+              <span className="text-twikkl-primary">01:40am</span>
+              <span className="text-twikkl-inactive">
+                Monday 30th Oct. 2023
+              </span>
+            </p>
           </div>
         </div>
       </div>

@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import {
   HamburgerIcon,
@@ -5,8 +7,16 @@ import {
   ToggleLightModeIcon,
 } from "../../../../public/svg";
 import SearchBox from "../atoms/SearchBox";
+import ProfileCard from "../molecules/ProfileCard";
+import { useState } from "react";
 
 const NavBar = ({ toggleSideBar }: { toggleSideBar: () => void }) => {
+  const [isProfileOpen, setIsProfileOpen] = useState(false);
+
+  const toggleProfileCard = () => {
+    setIsProfileOpen((prev) => !prev);
+  };
+
   return (
     <nav className="py-8 px-6 flex items-center justify-between w-full">
       <span className="w-10 h-10 md:hidden">
@@ -25,7 +35,10 @@ const NavBar = ({ toggleSideBar }: { toggleSideBar: () => void }) => {
           </span>
         </div>
 
-        <div className="flex gap-x-3 items-center">
+        <div
+          className="flex gap-x-3 items-center cursor-pointer"
+          onClick={toggleProfileCard}
+        >
           <Image
             src="/img/profile.webp"
             alt="profile-image"
@@ -33,12 +46,16 @@ const NavBar = ({ toggleSideBar }: { toggleSideBar: () => void }) => {
             height={40}
             className="rounded-full h-10 w-10"
           />
-          <div className="hidden md:flex flex-col">
+          <div className="hidden md:flex flex-col relative">
             <span className="font-medium text-twikkl-main">
               @ubongabasi.jgy
             </span>
             <span className="text-xs text-twikkl-primary">Admin</span>
           </div>
+          <ProfileCard
+            isProfileOpen={isProfileOpen}
+            toggleProfile={toggleProfileCard}
+          />
         </div>
 
         <span className="hidden md:block h-[1.875rem] w-[1.875rem]">
