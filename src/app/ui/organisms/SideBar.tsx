@@ -1,7 +1,7 @@
 import Link from "next/link";
 import NavLink from "../molecules/NavLinks";
 import Image from "next/image";
-import { CalendarTimeIcon, LogoutIcon } from "../../../../public/svg";
+import { CalendarTimeIcon } from "../../../../public/svg";
 
 const SideBar = ({ toggleSidebar }: { toggleSidebar: () => void }) => {
   return (

@@ -1,32 +1,23 @@
 "use client";
 
-import { modalEntity } from "@/app/lib/entities/modal.entity";
-import clsx from "clsx";
-import VotersModal from "./VotersModal";
+import { modalEntity, resetModalState } from "@/app/lib/entities/modal.entity";
+
 import { ReactNode, useEffect } from "react";
 import ReactPortal from "../../molecules/ReactPortal";
 
-const Modal = ({
-  children,
-  isOpen,
-  handleClose,
-}: {
-  children: ReactNode;
-  isOpen: boolean;
-  handleClose: () => void;
-}) => {
-  // const { isEnabled, type } = modalEntity.use();
+const Modal = ({ children }: { children: ReactNode }) => {
+  const { isEnabled } = modalEntity.use();
 
   useEffect(() => {
     const closeOnEscapeKey = (e: KeyboardEvent) =>
-      e.key === "Escape" ? handleClose() : null;
+      e.key === "Escape" ? resetModalState() : null;
 
     document.body.addEventListener("keydown", closeOnEscapeKey);
 
     return () => {
       document.body.removeEventListener("keydown", closeOnEscapeKey);
     };
-  }, [handleClose]);
+  }, [isEnabled]);
 
   useEffect(() => {
     document.body.style.overflow = "hidden";
@@ -34,16 +25,15 @@ const Modal = ({
     return () => {
       document.body.style.overflow = "unset";
     };
-  }, [isOpen]);
+  }, [isEnabled]);
 
-  if (!isOpen) return null;
+  if (!isEnabled) return null;
 
   return (
     <ReactPortal wrapperId="react-portal-modal-container">
       <>
-        <div className="fixed inset-0 z-30 bg-[#04110580]" />
-
-        <div className="fixed top-0 left-0 h-screen w-screen flex justify-center items-center px-6 md:px-0 z-30">
+        <div className="fixed inset-0 overflow-hidden z-20 bg-[#04110580]" />
+        <div className="fixed w-screen inset-y-4 md:inset-y-36 flex justify-center items-center px-6 md:px-0 z-30 min-w-fit">
           {children}
         </div>
       </>

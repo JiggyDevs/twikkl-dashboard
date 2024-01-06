@@ -29,3 +29,4 @@ export { default as CommentIcon } from "./CommentIcon";
 export { default as FlagIcon } from "./FlagIcon";
 export { default as LikeIcon } from "./LikeIcon";
 export { default as ShareLinkIcon } from "./ShareLinkIcon";
+export { default as ArrowRightLeftIcon } from "./ArrowRightLeftIcon";

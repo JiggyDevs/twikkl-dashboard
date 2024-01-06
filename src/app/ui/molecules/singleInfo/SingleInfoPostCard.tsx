@@ -45,15 +45,17 @@ const SingleInfoPostCard = ({
           width={47}
           height={47}
           alt="user-image"
-          className="h-12 w-12 rounded-full"
+          className="h-12 w-12 rounded-full hidden md:block"
           placeholder="blur"
           blurDataURL="/img/profile.webp"
         />
 
-        <div className="w-[90%]">
-          <h2 className="font-semibold text-twikkl-main">{username}</h2>
+        <div className="w-[80%] md:w-[90%]">
+          <h2 className="font-semibold text-twikkl-main mb-2 mb:0">
+            {username}
+          </h2>
           {report ? <h3 className="text-twikkl-primary">{report}</h3> : null}
-          <p className="text-sm text-twikkl-main">
+          <p className="text-sm text-twikkl-main text-start md:text-start">
             {content}{" "}
             {tags?.length
               ? tags.map((tag, i) => (
@@ -71,7 +73,7 @@ const SingleInfoPostCard = ({
       </div>
 
       {video ? (
-        <div className="relative h-28 w-2/12">
+        <div className="relative h-32 md:h-28 w-1/2 md:w-2/12">
           <ReactPlayer
             className="absolute"
             url={video}

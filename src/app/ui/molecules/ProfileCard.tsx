@@ -1,5 +1,11 @@
+"use client";
+
+import {
+  resetModalState,
+  setModalState,
+} from "@/app/lib/entities/modal.entity";
 import clsx from "clsx";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const ProfileCard = ({
   isProfileOpen,
@@ -8,24 +14,37 @@ const ProfileCard = ({
   isProfileOpen: boolean;
   toggleProfile: () => void;
 }) => {
+  const router = useRouter();
+
+  const handleLogout = () => {
+    setModalState({ type: "logout", data: null });
+    toggleProfile();
+  };
+
+  const navigateToProfile = () => {
+    resetModalState();
+    router.push("/dashboard/setting");
+    toggleProfile();
+  };
+
   return (
     <div
       className={clsx(
-        "bg-twikkl-tertiary rounded-lg flex flex-col shadow-lg  absolute top-20 w-[13rem] transition-all duration-200",
+        "bg-twikkl-tertiary rounded-lg flex flex-col shadow-lg absolute top-12 md:top-20 right-0 md:right-14 w-[13rem] transition-all duration-200",
         isProfileOpen
           ? "opacity-1 pointer-events-auto"
           : "pointer-events-none opacity-0"
       )}
     >
-      <Link
+      <button
         className="py-3 pl-4 text-twikkl-main border-b text-left hover:bg-twikkl-active rounded-t-lg"
-        href="/dashboard/setting"
+        onClick={navigateToProfile}
       >
         Go to Profile
-      </Link>
+      </button>
       <button
         className="py-3 pl-4 text-twikkl-main text-left hover:bg-twikkl-active rounded-b-lg"
-        onClick={toggleProfile}
+        onClick={handleLogout}
       >
         Logout
       </button>

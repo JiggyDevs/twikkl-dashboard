@@ -3,7 +3,6 @@ import TextArea from "@/app/ui/atoms/TextArea";
 import ImageUpload from "@/app/ui/molecules/ImageUpload";
 import Tab from "@/app/ui/molecules/Tab";
 import Image from "next/image";
-import React from "react";
 
 const SettingsPage = () => {
   return (
@@ -11,7 +10,7 @@ const SettingsPage = () => {
       <h1 className="text-twikkl-main text-xl font-semibold mb-4">Settings</h1>
       <Tab />
       <div className="bg-twikkl-tertiary p-8 rounded-3xl mt-4">
-        <div className="">
+        <div>
           <h2 className="text-twikkl-inactive mb-2">Profile Info</h2>
           <div className="flex gap-x-5 items-start">
             <Image
@@ -36,7 +35,7 @@ const SettingsPage = () => {
             Update your photo and personal details
           </h2>
         </div>
-        <form className="grid grid-cols-2 gap-x-8">
+        <form className="grid md:grid-cols-2 gap-x-8">
           <div className="space-y-4">
             <Input label="First Name" defaultValue="UbongAbasi" />
             <Input label="Last Name" defaultValue="Ndak" />

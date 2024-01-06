@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 import {
   HamburgerIcon,
@@ -8,7 +9,6 @@ import {
 } from "../../../../public/svg";
 import SearchBox from "../atoms/SearchBox";
 import ProfileCard from "../molecules/ProfileCard";
-import { useState } from "react";
 
 const NavBar = ({ toggleSideBar }: { toggleSideBar: () => void }) => {
   const [isProfileOpen, setIsProfileOpen] = useState(false);
@@ -35,18 +35,16 @@ const NavBar = ({ toggleSideBar }: { toggleSideBar: () => void }) => {
           </span>
         </div>
 
-        <div
-          className="flex gap-x-3 items-center cursor-pointer"
-          onClick={toggleProfileCard}
-        >
+        <div className="flex gap-x-3 items-center cursor-pointer relative md:static">
           <Image
             src="/img/profile.webp"
             alt="profile-image"
             width={40}
             height={40}
             className="rounded-full h-10 w-10"
+            onClick={toggleProfileCard}
           />
-          <div className="hidden md:flex flex-col relative">
+          <div className="hidden md:flex flex-col">
             <span className="font-medium text-twikkl-main">
               @ubongabasi.jgy
             </span>

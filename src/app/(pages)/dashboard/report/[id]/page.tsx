@@ -2,8 +2,8 @@
 
 import dynamic from "next/dynamic";
 import {
-  ArrowLeftIcon,
   ArrowRightIcon,
+  ArrowRightLeftIcon,
   CloseIcon,
   CommentIcon,
   FlagIcon,
@@ -13,18 +13,19 @@ import {
   VolumeIcon,
 } from "../../../../../../public/svg";
 import Image from "next/image";
+import Tab2 from "@/app/ui/molecules/Tab2";
+import CopyLink from "@/app/ui/atoms/CopyLink";
 
 const ReactPlayer = dynamic(() => import("react-player/lazy"), { ssr: false });
 
 const RecentSinglePage = ({ params }: { params: { slug: string } }) => {
-  //   console.log(params);
   return (
-    <div className="grid grid-cols-[8fr_2fr] h-[85vh] gap-x-6 w-full">
-      <div className="bg-[#000000] px-8 flex items-center justify-between relative w-full">
-        <span className="self-start mt-8">
+    <div className="flex flex-col md:flex-row h-screen md:h-[85vh] gap-y-6 md:gap-y-0 gap-x-6 md:w-full">
+      <div className="bg-[#000000] px-4 md:px-8 flex items-center justify-between relative w-full h-[40vh] md:h-auto">
+        <span className="self-start mt-4 md:mt-8">
           <CloseIcon color="#fff" />
         </span>
-        <div className="relative h-full w-[85%]">
+        <div className="relative h-full md:w-[85%]">
           <ReactPlayer
             className="absolute"
             url="https://youtu.be/SAY30lci8mI?si=zCab6sgKg-hjHhdG"
@@ -37,7 +38,7 @@ const RecentSinglePage = ({ params }: { params: { slug: string } }) => {
         <span className="h-[2.21rem] w-[2.21rem] bg-white rounded-full grid place-content-center cursor-pointer">
           <ArrowRightIcon color="#000" />
         </span>
-        <span className="h-10 w-10 bg-twikkl-primary rounded-full grid place-content-center cursor-pointer absolute right-6 bottom-10">
+        <span className="h-10 w-10 bg-twikkl-primary rounded-full grid place-content-center cursor-pointer absolute right-4 md:right-6 bottom-4 md:bottom-10">
           <VolumeIcon />
         </span>
       </div>
@@ -90,7 +91,7 @@ const RecentSinglePage = ({ params }: { params: { slug: string } }) => {
           </div>
         </div>
         {/* likes, comment and flags */}
-        <div className="text-twikkl-primary flex items-center justify-between">
+        <div className="text-twikkl-primary flex items-center flex-wrap md:justify-between gap-y-4">
           <div className="font-medium flex items-center gap-x-6">
             <div className="flex items-center gap-x-2">
               <LikeIcon />
@@ -106,11 +107,8 @@ const RecentSinglePage = ({ params }: { params: { slug: string } }) => {
             </div>
           </div>
           {/* share links */}
-          <div className="flex gap-x-6">
-            <div className="h-10 w-10 bg-twikkl-main rounded-full flex justify-center items-center gap-x-1">
-              <ArrowLeftIcon color="#fff" />
-              <ArrowRightIcon color="#fff" />
-            </div>
+          <div className="flex gap-x-16 md:gap-x-6">
+            <ArrowRightLeftIcon />
             <div className="flex items-center gap-x-2 text-twikkl-main">
               <ShareLinkIcon />
               <span>Share</span>
@@ -118,16 +116,12 @@ const RecentSinglePage = ({ params }: { params: { slug: string } }) => {
           </div>
         </div>
         {/* copy link */}
-        <div className="flex bg-white py-2 px-6 rounded-lg items-center gap-8">
-          <span className="text-twikkl-inactive">
-            https:www.twikkl.com/@maxwell.jgy/video/782356323.2456..
-          </span>
-          <span className="text-twikkl-main text whitespace-nowrap">
-            Copy Link
-          </span>
-        </div>
+        <CopyLink />
         {/* copy link */}
-        lll
+        <div className="bg-twikkl-tertiary pt-8 rounded-3xl space-y-8">
+          <Tab2 />
+          <div className=""></div>
+        </div>
       </div>
     </div>
   );

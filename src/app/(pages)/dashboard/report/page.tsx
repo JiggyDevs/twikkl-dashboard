@@ -16,12 +16,12 @@ const ReportPage = () => {
   return (
     <div className="grid gap-y-4 pb-2">
       <h1 className="text-xl font-bold text-twikkl-main">Reports</h1>
-      <div className="bg-twikkl-tertiary rounded-3xl flex flex-col p-8 w-full mb-2">
+      <div className="bg-twikkl-tertiary rounded-3xl flex flex-col py-6 p-4 md:p-8 w-full mb-2">
         <ReportTableFilter />
         <div className="flex flex-col gap-y-4 overflow-y-auto max-h-[38rem] mt-4">
           {userRecentPosts?.map((post, i) => (
             <div
-              className=" pb-4 last:border-none last:pb-0"
+              className="pb-4 last:border-none last:pb-0"
               key={`Recent-Post-${post.time + i}`}
             >
               <SingleInfoPostCard {...post} />
