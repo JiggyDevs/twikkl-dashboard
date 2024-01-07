@@ -30,7 +30,10 @@ const SingleInfoPostCard = ({
   const pathname = usePathname();
 
   const navigateToPage = useCallback(
-    (id: string | number) => router.push(pathname + "/" + id),
+    (id: string | number) =>
+      router.push(
+        `${!pathname.endsWith("report") ? "/dashboard/report" : pathname}/${id}`
+      ),
     []
   );
 
