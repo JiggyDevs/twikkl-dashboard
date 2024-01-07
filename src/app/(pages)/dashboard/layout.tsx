@@ -22,7 +22,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       <main className="h-screen flex overflow-hidden">
         <SideBar openSidebar={isOpen} toggleSidebar={toggleMobileSidebar} />
 
-        <div className="bg-[#D7EBD9] flex-grow flex flex-col overflow-hidden">
+        <div className="bg-[#D7EBD9] flex-grow flex flex-col overflow-hidden pb-4">
           <NavBar toggleSideBar={toggleMobileSidebar} />
           <main className="px-6 py-3 md:pt-5 flex-grow overflow-y-auto overflow-x-hidden flex flex-col">
             {children}
