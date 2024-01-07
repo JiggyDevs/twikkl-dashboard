@@ -1,6 +1,8 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import { useRouter } from "next/navigation";
+
 import {
   ArrowRightIcon,
   ArrowRightLeftIcon,
@@ -20,11 +22,13 @@ import CommentBox from "@/app/ui/molecules/CommentBox";
 const ReactPlayer = dynamic(() => import("react-player/lazy"), { ssr: false });
 
 const RecentSinglePage = ({ params }: { params: { slug: string } }) => {
+  const router = useRouter();
+
   return (
     <div className="flex flex-col md:flex-row h-screen md:h-[85vh] gap-y-6 md:gap-y-0 gap-x-6 md:w-full">
       <div className="bg-[#000000] px-3 md:px-8 flex items-center justify-between relative w-full h-[50%] md:h-auto">
         <span className="self-start mt-4 md:mt-8">
-          <CloseIcon color="#fff" />
+          <CloseIcon color="#fff" onClick={() => router.back()} />
         </span>
         <div className="relative h-full w-[80%] md:w-[85%] mx-2 md:mx-0">
           <ReactPlayer
