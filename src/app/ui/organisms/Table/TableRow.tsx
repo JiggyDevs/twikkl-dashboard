@@ -36,7 +36,7 @@ const TableRows = <T, K extends keyof T>({
             <td
               key={`cell-${rowIndex}`}
               className={clsx(
-                "p-4 font-normal text-twikkl-main"
+                "px-3 py-4 md:p-4 font-normal text-twikkl-main whitespace-nowrap"
                 // rowIndex === 0 ? "flex gap-x-4 items-center" : null
               )}
             >

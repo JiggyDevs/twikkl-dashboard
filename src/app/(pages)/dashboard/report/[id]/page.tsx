@@ -15,17 +15,18 @@ import {
 import Image from "next/image";
 import Tab2 from "@/app/ui/molecules/Tab2";
 import CopyLink from "@/app/ui/atoms/CopyLink";
+import CommentBox from "@/app/ui/molecules/CommentBox";
 
 const ReactPlayer = dynamic(() => import("react-player/lazy"), { ssr: false });
 
 const RecentSinglePage = ({ params }: { params: { slug: string } }) => {
   return (
     <div className="flex flex-col md:flex-row h-screen md:h-[85vh] gap-y-6 md:gap-y-0 gap-x-6 md:w-full">
-      <div className="bg-[#000000] px-4 md:px-8 flex items-center justify-between relative w-full h-[40vh] md:h-auto">
+      <div className="bg-[#000000] px-3 md:px-8 flex items-center justify-between relative w-full h-[50%] md:h-auto">
         <span className="self-start mt-4 md:mt-8">
           <CloseIcon color="#fff" />
         </span>
-        <div className="relative h-full md:w-[85%]">
+        <div className="relative h-full w-[80%] md:w-[85%] mx-2 md:mx-0">
           <ReactPlayer
             className="absolute"
             url="https://youtu.be/SAY30lci8mI?si=zCab6sgKg-hjHhdG"
@@ -38,11 +39,11 @@ const RecentSinglePage = ({ params }: { params: { slug: string } }) => {
         <span className="h-[2.21rem] w-[2.21rem] bg-white rounded-full grid place-content-center cursor-pointer">
           <ArrowRightIcon color="#000" />
         </span>
-        <span className="h-10 w-10 bg-twikkl-primary rounded-full grid place-content-center cursor-pointer absolute right-4 md:right-6 bottom-4 md:bottom-10">
+        <span className="h-10 w-10 bg-twikkl-primary rounded-full grid place-content-center cursor-pointer absolute right-2 md:right-6 bottom-4 md:bottom-10">
           <VolumeIcon />
         </span>
       </div>
-      <div className="flex flex-col gap-y-4">
+      <div className="flex flex-col gap-y-4 h-[50%]">
         {/* user info follow and content */}
         <div className="bg-twikkl-tertiary rounded-3xl p-6 space-y-6">
           <div className="flex items-center justify-between">
@@ -120,7 +121,7 @@ const RecentSinglePage = ({ params }: { params: { slug: string } }) => {
         {/* copy link */}
         <div className="bg-twikkl-tertiary pt-8 rounded-3xl space-y-8">
           <Tab2 />
-          <div className=""></div>
+          <CommentBox />
         </div>
       </div>
     </div>

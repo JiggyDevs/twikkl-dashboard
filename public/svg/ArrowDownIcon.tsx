@@ -9,7 +9,7 @@ const ArrowDownIcon = (props: SVGProps<SVGSVGElement>) => (
     {...props}
   >
     <path
-      fill="#50A040"
+      fill={props.color || "#50A040"}
       d="M-.001 1.17a1 1 0 0 0 .37.78l6 4.83a1 1 0 0 0 1.27 0l6-5a1.001 1.001 0 1 0-1.28-1.54l-5.36 4.47L1.639.39a1 1 0 0 0-1.64.78Z"
     />
   </svg>

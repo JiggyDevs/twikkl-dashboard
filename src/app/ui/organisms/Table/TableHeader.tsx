@@ -1,6 +1,6 @@
 import { TableHeaderProps } from "@/app/lib/types/components";
 import clsx from "clsx";
-import CheckBox from "../../atoms/CheckBox";
+// import CheckBox from "../../atoms/CheckBox";
 
 const TableHeader = <T, K extends keyof T>({
   columns,
@@ -10,7 +10,7 @@ const TableHeader = <T, K extends keyof T>({
       return (
         <th
           className={clsx(
-            "p-4 text-twikkl-tertiary font-normal"
+            "px-3 py-4 md:p-4 text-twikkl-tertiary font-normal whitespace-nowrap"
             // index === 0 ? "flex gap-x-4 items-center" : ""
           )}
           key={`heading-${index}-${column.label}`}

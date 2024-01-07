@@ -30,7 +30,7 @@ const ProfileCard = ({
   return (
     <div
       className={clsx(
-        "bg-twikkl-tertiary rounded-lg flex flex-col shadow-lg absolute top-12 md:top-20 right-0 md:right-14 w-[13rem] transition-all duration-200",
+        "bg-twikkl-tertiary rounded-lg flex flex-col shadow-lg absolute top-12 md:top-20 right-0 md:right-14 w-[13rem] transition-all duration-200 z-20",
         isProfileOpen
           ? "opacity-1 pointer-events-auto"
           : "pointer-events-none opacity-0"
