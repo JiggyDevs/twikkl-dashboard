@@ -8,7 +8,7 @@ const WalletPage = () => {
   return (
     <div className="grid gap-y-4">
       <h1 className="text-xl font-bold text-twikkl-main">Wallets</h1>
-      <div className="bg-twikkl-tertiary rounded-3xl grid px-4 py-6 w-full gap-y-4">
+      <div className="bg-twikkl-tertiary rounded-3xl grid px-4 py-6 md:p-8 w-full gap-y-4">
         <WalletTableFilter />
         <Table columns={walletTableHeaders} data={data.twiKKlWalletData} />
         <Pagination />
