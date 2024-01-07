@@ -5,8 +5,8 @@ import { CalendarTimeIcon } from "../../../../public/svg";
 
 const SideBar = ({ toggleSidebar }: { toggleSidebar: () => void }) => {
   return (
-    <aside className="bg-twikkl-main h-[95vh] md:h-screen flex flex-col pb-4 pt-2 transition-all duration-200">
-      <div className="flex flex-col gap-y-4 h-full">
+    <aside className="bg-twikkl-main h-screen overflow-y-auto flex flex-col pb-4 pt-2 transition-all duration-200">
+      <div className="flex flex-col gap-y-4 flex-grow">
         <Link href="/dashboard" className="flex items-center">
           <Image
             src="/img/twikkl_logo.webp"
@@ -21,7 +21,7 @@ const SideBar = ({ toggleSidebar }: { toggleSidebar: () => void }) => {
           </div>
         </Link>
 
-        <div className="flex flex-col justify-between flex-grow">
+        <div className="flex flex-col justify-between h-full">
           <NavLink toggleSideBar={toggleSidebar} />
 
           <div
