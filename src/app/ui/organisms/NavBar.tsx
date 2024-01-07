@@ -18,7 +18,7 @@ const NavBar = ({ toggleSideBar }: { toggleSideBar: () => void }) => {
   };
 
   return (
-    <nav className="py-8 px-6 flex items-center justify-between w-full">
+    <nav className="py-4 md:py-8 px-6 flex items-center justify-between w-full">
       <span className="w-10 h-10 md:hidden">
         <HamburgerIcon onClick={toggleSideBar} />
       </span>

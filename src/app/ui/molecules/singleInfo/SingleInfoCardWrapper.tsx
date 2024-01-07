@@ -5,7 +5,7 @@ const SingleInfoCardWrapper = () => {
   const { singleUserInfo } = data;
 
   return (
-    <div className="grid grid-cols-4 gap-x-6">
+    <div className="grid gap-y-6 md:gap-y-0 md:grid-cols-4 md:gap-x-6">
       <SingleInfoCard {...singleUserInfo[0]} indicator="green" />
       <SingleInfoCard {...singleUserInfo[1]} indicator="lightOrange" />
       <SingleInfoCard {...singleUserInfo[2]} indicator="darkOrange" />

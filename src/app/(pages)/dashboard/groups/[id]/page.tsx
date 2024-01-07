@@ -10,8 +10,8 @@ const SingleGroup = () => {
   const { votersData } = data;
 
   return (
-    <div className="flex h-screen gap-x-6">
-      <div className="w-2/4 flex flex-col gap-y-6">
+    <div className="flex flex-col md:flex-row h-screen gap-x-6">
+      <div className="flex flex-col md:w-2/4 gap-y-6 mb-6 md:mb-0">
         <GroupProfileCard />
         <AdministratorsCard
           label="Administrators"
