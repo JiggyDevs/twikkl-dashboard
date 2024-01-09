@@ -16,14 +16,14 @@ const SideBar = ({
     <>
       <div
         className={clsx(
-          "fixed h-screen inset-0 bg-[#15381670] z-20 md:hidden",
+          "fixed h-[calc(100dvh)] inset-0 bg-[#15381670] z-20 md:hidden",
           openSidebar ? "block opacity-60" : "hidden opacity-0"
         )}
         onClick={toggleSidebar}
       />
       <aside
         className={clsx(
-          "bg-twikkl-main h-screen overflow-y-auto flex flex-col pb-4 pt-2 transition-all duration-200 z-30 absolute md:static min-w-fit",
+          "bg-twikkl-main h-[calc(100dvh)] overflow-y-auto flex flex-col pb-4 pt-2 transition-all duration-200 z-30 absolute md:static min-w-fit",
           openSidebar ? "left-0" : "-left-96"
         )}
       >

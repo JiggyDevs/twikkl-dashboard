@@ -25,7 +25,7 @@ const RecentSinglePage = ({ params }: { params: { slug: string } }) => {
   const router = useRouter();
 
   return (
-    <div className="flex flex-col md:flex-row h-screen md:h-[85vh] gap-y-6 md:gap-y-0 gap-x-6 md:w-full">
+    <div className="flex flex-col md:flex-row h-[calc(100dvh)] md:h-[85vh] gap-y-6 md:gap-y-0 gap-x-6 md:w-full">
       <div className="bg-[#000000] px-3 md:px-8 flex items-center justify-between relative w-full h-[50%] md:h-auto">
         <span className="self-start mt-4 md:mt-8">
           <CloseIcon color="#fff" onClick={() => router.back()} />
