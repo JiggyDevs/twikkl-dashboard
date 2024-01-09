@@ -21,7 +21,7 @@ const Page = () => {
   const { votersData } = data;
 
   return (
-    <div className="grid gap-y-6 w-full">
+    <div className="flex-grow grid gap-y-6 w-full">
       <CardWrapper />
       <div className="grid md:grid-cols-[0.7fr_0.3fr] gap-y-6 md:gap-y-0 gap-x-6 sidebar-scroll">
         <div className="space-y-6">

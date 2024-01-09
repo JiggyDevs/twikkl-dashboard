@@ -48,7 +48,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${axiforma.className} h-screen flex flex-col overflow-hidden`}
+        className={`${axiforma.className} h-[calc(100dvh)] bg-twikkl-tertiary flex flex-col overflow-hidden`}
       >
         {children}
       </body>
