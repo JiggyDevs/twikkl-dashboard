@@ -30,13 +30,13 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         </div>
       </main>
 
-      {/* <Modal>
+      <Modal>
         {type === "view-voters" ? (
           <VotersModal />
         ) : type === "logout" ? (
           <LogoutModal />
         ) : null}
-      </Modal> */}
+      </Modal>
     </>
   );
 };
