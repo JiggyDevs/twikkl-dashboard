@@ -50,12 +50,6 @@
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-}
-
-body {
   /* Hide the scrollbar thumb */
   scrollbar-width: none;
   -ms-overflow-style: none;

@@ -19,7 +19,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <>
-      <main className="h-screen flex overflow-hidden">
+      <main className="flex-grow flex overflow-hidden">
         <SideBar openSidebar={isOpen} toggleSidebar={toggleMobileSidebar} />
 
         <div className="bg-[#D7EBD9] flex-grow flex flex-col overflow-hidden pb-4">
