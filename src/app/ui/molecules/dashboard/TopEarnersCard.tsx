@@ -9,7 +9,7 @@ import { TwikklVerifiedIcon } from "../../../../../public/svg";
 const TopEarnersCard = () => {
   const { topEarnersData } = data;
   return (
-    <div className="grid bg-twikkl-tertiary p-8 rounded-3xl max-h-[20rem]">
+    <div className="grid bg-twikkl-tertiary p-8 rounded-3xl max-h-[25rem] md:max-h-[20rem] overflow-auto">
       <div className="flex items-center justify-between">
         <h1 className="font-medium">Top Earners</h1>
         <Select

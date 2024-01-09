@@ -47,9 +47,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${axiforma.className} overflow-hidden`}>
-        {children}
-      </body>
+      <body className={`${axiforma.className}`}>{children}</body>
     </html>
   );
 }
